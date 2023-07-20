@@ -1,5 +1,6 @@
 package model;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 // Represents a list of scheduled Blocks
@@ -29,12 +30,17 @@ public class Schedule {
         return schedule;
     }
 
-    // EFFECTS: Overrides toString in class Object, returns the titles of the block objects in schedule
+    // EFFECTS: Overrides toString in class Object, returns the titles of the block objects in schedule along with the
+    // start and end time of the block
     @Override
     public String toString() {
+        DecimalFormat df = new DecimalFormat();
+        df.setMinimumFractionDigits(2);
         String s = "";
         for (Block scheduledBlock : schedule) {
-            s += scheduledBlock.toString() + "\n";
+            float from = scheduledBlock.getStartTime();
+            float to = scheduledBlock.getStartTime() + scheduledBlock.getLength();
+            s += scheduledBlock.toString() + " from " + df.format(from) + " to " + df.format(to) + "\n";
         }
         return s;
     }

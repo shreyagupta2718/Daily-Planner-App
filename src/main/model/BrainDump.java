@@ -1,5 +1,6 @@
 package model;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 // Represents a list of unscheduled Blocks
@@ -58,12 +59,15 @@ public class BrainDump {
         return brainDump;
     }
 
-    // EFFECTS: Overrides toString in class Object, returns the titles of the block objects in brain dump
+    // EFFECTS: Overrides toString in class Object, returns the titles of the block objects in brain dump along with
+    // their length
     @Override
     public String toString() {
+        DecimalFormat df = new DecimalFormat();
+        df.setMinimumFractionDigits(2);
         String s = "";
         for (Block b : brainDump) {
-            s += b.toString() + "\n";
+            s += b.toString() + " of length " + df.format(b.getLength()) + "\n";
         }
         return s;
     }

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="Fixed checkstyle issues in phase 1 deliverables">
-      <change beforePath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" afterDir="false" />
+    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="Fixed another checkstyle issue in phase 1 deliverables">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/BrainDump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/BrainDump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/model/BrainDumpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/model/BrainDumpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/model/ScheduleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/model/ScheduleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +19,13 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +42,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/labs",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -37,34 +50,21 @@
     "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BlockTest">
-    <configuration name="BlockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.Main" />
       <module name="project_w0k4c" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BlockTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlockTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project_w0k4c" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BlockTest" />
-      <option name="METHOD_NAME" value="testToString" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,22 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrainDumpTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project_w0k4c" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BrainDumpTest" />
-      <option name="METHOD_NAME" value="testToString1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ScheduleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_w0k4c" />
       <extension name="coverage">
@@ -115,13 +99,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScheduleTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_w0k4c" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.ScheduleTest" />
+      <option name="METHOD_NAME" value="testToString1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScheduleTest.testToString2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_w0k4c" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.ScheduleTest" />
+      <option name="METHOD_NAME" value="testToString2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BlockTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ScheduleTest" />
         <item itemvalue="JUnit.BrainDumpTest" />
-        <item itemvalue="JUnit.BrainDumpTest.testToString1" />
-        <item itemvalue="JUnit.BlockTest.testToString" />
+        <item itemvalue="JUnit.ScheduleTest.testToString2" />
+        <item itemvalue="JUnit.ScheduleTest.testToString1" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689820202976</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed another checkstyle issue in phase 1 deliverables">
+      <option name="closed" value="true" />
+      <created>1689820361015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689820361015</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +191,29 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed phase 1 deliverables" />
     <MESSAGE value="Fixed checkstyle issues in phase 1 deliverables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed checkstyle issues in phase 1 deliverables" />
+    <MESSAGE value="Fixed another checkstyle issue in phase 1 deliverables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed another checkstyle issue in phase 1 deliverables" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/model/BrainDumpTest.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/model/ScheduleTest.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/model/ScheduleTest.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_w0k4c$TestBlock.ic" NAME="TestBlock Coverage Results" MODIFIED="1689816925901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

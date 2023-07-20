@@ -8,7 +8,7 @@ public class Block {
 
     // REQUIRES: title has a non-zero length, length is in decimal hours
     // EFFECTS: Constructs a Block with given title and length in time
-    // startTime is initialized to impossible 24-hour time value 24.00
+    // startTime is initialized to illegal time value 24.00
     public Block(String title, float length) {
         this.title = title;
         this.length = length;

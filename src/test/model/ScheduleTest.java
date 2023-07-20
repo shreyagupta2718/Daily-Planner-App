@@ -75,18 +75,21 @@ public class ScheduleTest {
     @Test
     void testToString1() {
         Block block0 = new Block("jogging", 0.75F);
+        block0.setStartTime(22.00F);
         testSchedule.addToSchedule(block0);
-        String expected= "jogging\n";
+        String expected= "jogging from 22.00 to 22.75\n";
         assertEquals(expected, testSchedule.toString());
     }
     
     @Test
     void testToString2() {
         Block block0 = new Block("jogging", 0.75F);
+        block0.setStartTime(22.00F);
         Block block1 = new Block("sleeping", 7.00F);
+        block1.setStartTime(00.00F);
         testSchedule.addToSchedule(block0);
         testSchedule.addToSchedule(block1);
-        String expected= "jogging\nsleeping\n";
+        String expected= "jogging from 22.00 to 22.75\nsleeping from 0.00 to 7.00\n";
         assertEquals(expected, testSchedule.toString());
     }
 }

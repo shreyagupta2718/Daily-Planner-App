@@ -146,7 +146,7 @@ public class BrainDumpTest {
     void testToString1() {
         Block block0 = new Block("jogging", 0.75F);
         testBrainDump.addToBrainDump(block0);
-        String expected= "jogging\n";
+        String expected= "jogging of length 0.75\n";
         assertEquals(expected, testBrainDump.toString());
     }
 
@@ -156,7 +156,7 @@ public class BrainDumpTest {
         Block block1 = new Block("sleeping", 7.00F);
         testBrainDump.addToBrainDump(block0);
         testBrainDump.addToBrainDump(block1);
-        String expected= "jogging\nsleeping\n";
+        String expected= "jogging of length 0.75\nsleeping of length 7.00\n";
         assertEquals(expected, testBrainDump.toString());
     }
 }
