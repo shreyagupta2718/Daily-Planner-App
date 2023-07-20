@@ -34,7 +34,7 @@ public class Schedule {
     public String toString() {
         String s = "";
         for (Block scheduledBlock : schedule) {
-            s+=scheduledBlock.toString()+ "\n";
+            s += scheduledBlock.toString() + "\n";
         }
         return s;
     }

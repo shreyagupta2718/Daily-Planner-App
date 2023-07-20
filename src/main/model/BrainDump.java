@@ -63,7 +63,7 @@ public class BrainDump {
     public String toString() {
         String s = "";
         for (Block b : brainDump) {
-            s+=b.toString()+"\n";
+            s += b.toString() + "\n";
         }
         return s;
     }

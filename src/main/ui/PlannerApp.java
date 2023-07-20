@@ -73,8 +73,9 @@ public class PlannerApp {
     private void delete() {
         System.out.println("Enter the title of block you want to delete");
         String title = input.next();
-        if (brainDump.findBlockFromTitle(title) == null)
+        if (brainDump.findBlockFromTitle(title) == null) {
             System.out.println("Title not found in brain dump!");
+        }
         else {
             brainDump.deleteFromBrainDump(title);
             System.out.println("Deleted!");
