@@ -22,13 +22,13 @@ public class PlannerApp {
     }
 
     // MODIFIES: this
-    // EFFECTS: processes user input
+    // EFFECTS: initializes the brain dump and schedule fields, and processes user input
     private void runPlanner() {
-        boolean keepGoing = true;
-        int command = 0;
-
         brainDump = new BrainDump();
         schedule = new Schedule();
+
+        boolean keepGoing = true;
+        int command;
         input = new Scanner(System.in);
         input.useDelimiter("\n");
 
@@ -68,16 +68,20 @@ public class PlannerApp {
         }
     }
 
+    // MODIFIES: this
     // EFFECTS: delete a block from brain dump
     private void delete() {
         System.out.println("Enter the title of block you want to delete");
         String title = input.next();
-        if(brainDump.findBlockFromTitle(title).equals(null))
-            System.out.println("Title not found");
-        else
-        brainDump.deleteFromBrainDump(title);
+        if (brainDump.findBlockFromTitle(title) == null)
+            System.out.println("Title not found in brain dump!");
+        else {
+            brainDump.deleteFromBrainDump(title);
+            System.out.println("Deleted!");
+        }
     }
 
+    // MODIFIES: this
     // EFFECTS: move a block from schedule to brain dump
     private void move2() {
         System.out.println("Enter the index of block you want to move back to brain dump");
@@ -87,11 +91,15 @@ public class PlannerApp {
             block.setStartTime(24.00F);
             schedule.deleteFromSchedule(block);
             brainDump.addToBrainDump(block);
+            System.out.print("Block moved");
+        } else if (schedule.getSchedule().size() == 0) {
+            System.out.println("First add a block to the schedule, it's empty!");
         } else {
             System.out.println("Invalid index");
         }
     }
 
+    // MODIFIES: this
     // EFFECTS: moves a block from brain-dump to schedule
     private void move1() {
         System.out.println("Enter the index of block you want to set a start time for");
@@ -103,6 +111,10 @@ public class PlannerApp {
             block.setStartTime(time);
             schedule.addToSchedule(block);
             brainDump.deleteFromBrainDump(block);
+            System.out.print("Block has been scheduled for " + time);
+
+        } else if (brainDump.getBrainDump().size() == 0) {
+            System.out.println("First add a block to brain dump, it's empty!");
         } else {
             System.out.println("Invalid index");
         }
@@ -110,16 +122,21 @@ public class PlannerApp {
 
     // EFFECTS: displays the list of unscheduled blocks (brain-dump)
     private void view() {
-        System.out.println("BrainDump: " + brainDump.getBrainDump());
-        System.out.println("Schedule: " + schedule.getSchedule());
+        System.out.println("Here you go :)");
+        System.out.println();
+        System.out.println("BrainDump:");
+        System.out.println(brainDump.toString());
+        System.out.println("Schedule:");
+        System.out.println(schedule.toString());
     }
 
+    // MODIFIES: this
     // EFFECTS: adds a block to brain dump
     private void add() {
-        System.out.println("Enter title with non-zero length");
+        System.out.println("Enter title of block (non-zero length)");
         String title = input.next();
         System.out.println("Enter length of block in decimal hours");
-        Float length = input.nextFloat();
+        float length = input.nextFloat();
         brainDump.addToBrainDump(title, length);
     }
 

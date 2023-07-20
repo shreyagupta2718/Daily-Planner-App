@@ -4,11 +4,11 @@ package model;
 public class Block {
     private String title;      // name of block or activity
     private float length;      // length of block i.e. duration of activity in decimal hours
-    private float startTime;   // start time represented in 24-hr format in decimal hours
+    private float startTime;   // start time represented in 24-hour format in decimal hours
 
     // REQUIRES: title has a non-zero length, length is in decimal hours
-    // EFFECTS: Constructs a Block with given title and length in time;
-    // startTime is initialized to impossible time value 24.00
+    // EFFECTS: Constructs a Block with given title and length in time
+    // startTime is initialized to impossible 24-hour time value 24.00
     public Block(String title, float length) {
         this.title = title;
         this.length = length;
@@ -24,18 +24,7 @@ public class Block {
 
     // EFFECTS: returns true if a start time has been assigned to the activity, false otherwise
     public boolean isScheduled() {
-        if(this.startTime < 24.00)
-            return true;
-        else
-            return false;
-    }
-
-    public void setLength(float length) {
-        this.length = length;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+        return (this.startTime != 24.00);
     }
 
     public float getLength() {
@@ -43,6 +32,16 @@ public class Block {
     }
 
     public String getTitle() {
+        return title;
+    }
+
+    public Float getStartTime() {
+        return startTime;
+    }
+
+    // EFFECTS: Overrides toString in class Object, returns the title of the object
+    @Override
+    public String toString() {
         return title;
     }
 }

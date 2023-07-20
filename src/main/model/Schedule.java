@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 // Represents a list of scheduled Blocks
 public class Schedule {
-    private ArrayList<Block> schedule;
+    private ArrayList<Block> schedule; // Daily schedule, a list of scheduled blocks
 
     // Constructs a new empty list of Blocks
     public Schedule() {
-        schedule = new ArrayList<Block>();
+        schedule = new ArrayList<>();
     }
 
     // REQUIRES: A scheduled block i.e. start time of block is set
@@ -22,11 +22,20 @@ public class Schedule {
     // MODIFIES: this
     // EFFECTS: The given block is deleted from the schedule
     public void deleteFromSchedule(Block block) {
-        int index = schedule.indexOf(block);
-        schedule.remove(index);
+        schedule.remove(block);
     }
 
     public ArrayList<Block> getSchedule() {
         return schedule;
+    }
+
+    // EFFECTS: Overrides toString in class Object, returns the titles of the block objects in schedule
+    @Override
+    public String toString() {
+        String s = "";
+        for (Block scheduledBlock : schedule) {
+            s+=scheduledBlock.toString()+ "\n";
+        }
+        return s;
     }
 }

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 // Represents a list of unscheduled Blocks
 public class BrainDump {
-    private ArrayList<Block> brainDump;
+    private ArrayList<Block> brainDump; // Brain dump of activities for the day, a list of unscheduled blocks
 
     // Constructs a new empty list of Blocks
     public BrainDump() {
-        brainDump = new ArrayList<Block>();
+        brainDump = new ArrayList<>();
     }
 
     // REQUIRES: title has a non-zero length, length is in decimal hours
@@ -30,33 +30,41 @@ public class BrainDump {
     // MODIFIES: this
     // EFFECTS: The given block is deleted from the brain dump
     public void deleteFromBrainDump(Block block) {
-        int index = brainDump.indexOf(block);
-        brainDump.remove(index);
+        brainDump.remove(block);
     }
 
     // REQUIRES: Block with given title is present in the brain dump
     // MODIFIES: this
     // EFFECTS: The block with given title is deleted from the brain dump
     public void deleteFromBrainDump(String title) {
-        Block block= findBlockFromTitle(title);
-        brainDump.remove(brainDump.indexOf(block));
+        Block block = findBlockFromTitle(title);
+        brainDump.remove(block);
     }
 
     // REQUIRES: title has a non-zero length
     // EFFECTS: The block with given title is returned if present, null is returned otherwise
     public Block findBlockFromTitle(String title) {
-        boolean found= false;
-        Block block=null;
-        for(Block blockCandidate : brainDump) {
+        Block block = null;
+        for (Block blockCandidate : brainDump) {
             if (blockCandidate.getTitle().equalsIgnoreCase(title)) {
-                block=blockCandidate;
+                block = blockCandidate;
                 break;
             }
         }
-            return block;
-        }
+        return block;
+    }
 
     public ArrayList<Block> getBrainDump() {
         return brainDump;
+    }
+
+    // EFFECTS: Overrides toString in class Object, returns the titles of the block objects in brain dump
+    @Override
+    public String toString() {
+        String s = "";
+        for (Block b : brainDump) {
+            s+=b.toString()+"\n";
+        }
+        return s;
     }
 }
