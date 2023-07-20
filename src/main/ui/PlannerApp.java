@@ -75,8 +75,7 @@ public class PlannerApp {
         String title = input.next();
         if (brainDump.findBlockFromTitle(title) == null) {
             System.out.println("Title not found in brain dump!");
-        }
-        else {
+        } else {
             brainDump.deleteFromBrainDump(title);
             System.out.println("Deleted!");
         }
