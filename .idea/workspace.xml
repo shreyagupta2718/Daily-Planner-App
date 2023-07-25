@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="Fixed another checkstyle issue in phase 1 deliverables">
+    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="Added features to display times along with block titles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/BrainDump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/BrainDump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/model/BrainDumpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/model/BrainDumpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/model/ScheduleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/model/ScheduleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/labs",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Denali/Documents/CPSC 210/labs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ui" />
@@ -174,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689820361015</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added features to display times along with block titles">
+      <option name="closed" value="true" />
+      <created>1689853174147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689853174147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,7 +196,8 @@
     <MESSAGE value="Completed phase 1 deliverables" />
     <MESSAGE value="Fixed checkstyle issues in phase 1 deliverables" />
     <MESSAGE value="Fixed another checkstyle issue in phase 1 deliverables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed another checkstyle issue in phase 1 deliverables" />
+    <MESSAGE value="Added features to display times along with block titles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added features to display times along with block titles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

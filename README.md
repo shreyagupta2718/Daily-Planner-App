@@ -1,8 +1,8 @@
 # My Personal Project: Daily Time-Blocking Planner
 
 This project will be useful to anyone who wants a
-simple application to **plan and visualize**
-their day. It allows users to brain dump 
+simple application to quickly **plan and visualize**
+their day. It allows users to **brain dump** 
 activities for the day, called **blocks**, on the left column. These blocks can then be added
 to the day's calendar (titled **schedule**) on the right column. 
 This project is of interest to me
@@ -19,4 +19,6 @@ schedule
  corresponding height
 - As a user, I want to be able to move a block from the brain-dump to the schedule and vice-versa
 - As a user, I want to be able to delete a block from the brain-dump
+- As a user, I want to be able to save my brain-dump and schedule to file (if I so choose)
+- As a user, I want to be able to be able to load my brain-dump and schedule from file (if I so choose)
 
