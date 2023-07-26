@@ -6,7 +6,11 @@ package ui;
 import model.Block;
 import model.BrainDump;
 import model.Schedule;
+import persistence.JsonReader;
+import persistence.JsonWriter;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 // Daily Time-Blocking Planner Application
@@ -15,17 +19,22 @@ public class PlannerApp {
     private BrainDump brainDump;
     private Schedule schedule;
     private Scanner input;
+    private JsonWriter jsonWriter;
+    private JsonReader jsonReader;
+    private static final String JSON_STORE = "./data/Plan.json";
 
-    // EFFECTS: runs the planner application
+    // EFFECTS: constructs brain dump and schedule, and runs the planner application
     public PlannerApp() {
+        brainDump = new BrainDump();
+        schedule = new Schedule();
+        jsonWriter = new JsonWriter(JSON_STORE);
+        jsonReader = new JsonReader(JSON_STORE);
         runPlanner();
     }
 
     // MODIFIES: this
-    // EFFECTS: initializes the brain dump and schedule fields, and processes user input
+    // EFFECTS: processes user input
     private void runPlanner() {
-        brainDump = new BrainDump();
-        schedule = new Schedule();
 
         boolean keepGoing = true;
         int command;
@@ -63,6 +72,10 @@ public class PlannerApp {
             case 5:
                 delete();
                 break;
+            case 6:
+                savePlan();
+            case 7:
+                loadPlan();
             default:
                 System.out.println("Selection not valid...");
         }
@@ -149,5 +162,31 @@ public class PlannerApp {
         System.out.println("\t3 -> move a block from brain-dump to schedule");
         System.out.println("\t4 -> move a block from schedule to brain dump");
         System.out.println("\t5 -> delete a block from brain dump");
+        System.out.println("\t6 -> save plan");
+        System.out.println("\t7 -> load plan");
+    }
+
+    // EFFECTS: saves the brain dump and schedule to file
+    private void savePlan() {
+        try {
+            jsonWriter.open();
+            jsonWriter.write(brainDump, schedule);
+            jsonWriter.close();
+            System.out.println("Saved plan to " + JSON_STORE);
+        } catch (FileNotFoundException e) {
+            System.out.println("Unable to write to file: " + JSON_STORE);
+        }
+    }
+
+    // MODIFIES: this
+    // EFFECTS: loads workroom from file
+    private void loadWorkRoom() {
+        try {
+            brainDump = jsonReader.read("BrainDump");
+            schedule = jsonReader.read("Schedule");
+            System.out.println("Loaded plan from " + JSON_STORE);
+        } catch (IOException e) {
+            System.out.println("Unable to read from file: " + JSON_STORE);
+        }
     }
 }

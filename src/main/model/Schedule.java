@@ -1,10 +1,13 @@
 package model;
 
+import org.json.JSONObject;
+import persistence.Writable;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 // Represents a list of scheduled Blocks
-public class Schedule {
+public class Schedule implements Writable {
     private ArrayList<Block> schedule; // Daily schedule, a list of scheduled blocks
 
     // Constructs a new empty list of Blocks
@@ -43,5 +46,12 @@ public class Schedule {
             s += scheduledBlock.toString() + " from " + df.format(from) + " to " + df.format(to) + "\n";
         }
         return s;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        JSONObject json= new JSONObject();
+        json.put("schedule", schedule);
+        return json;
     }
 }

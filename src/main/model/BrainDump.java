@@ -1,10 +1,13 @@
 package model;
 
+import org.json.JSONObject;
+import persistence.Writable;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 // Represents a list of unscheduled Blocks
-public class BrainDump {
+public class BrainDump implements Writable {
     private ArrayList<Block> brainDump; // Brain dump of activities for the day, a list of unscheduled blocks
 
     // Constructs a new empty list of Blocks
@@ -70,5 +73,12 @@ public class BrainDump {
             s += b.toString() + " of length " + df.format(b.getLength()) + "\n";
         }
         return s;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        json.put("Brain Dump", brainDump);
+        return json;
     }
 }
