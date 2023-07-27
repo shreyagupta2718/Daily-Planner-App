@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
+// REFERENCES: JsonSerializationDemo for saving/reading data
+
 // Represents a writer that writes JSON representation of plan to file
 public class JsonWriter {
     private static final int TAB = 4;

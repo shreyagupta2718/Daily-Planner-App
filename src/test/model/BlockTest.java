@@ -3,16 +3,21 @@ package model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.text.DecimalFormat;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BlockTest {
     private Block testBlock;
     private String testTitle = "CPSC210 project";
     private float testLength = 4.50F;
+    private float testStartTime = 17.00F;
+    DecimalFormat df = new DecimalFormat();
 
     @BeforeEach
     void runBefore() {
         testBlock = new Block(testTitle, testLength);
+        df.setMinimumFractionDigits(2);
     }
 
     @Test
@@ -50,7 +55,14 @@ public class BlockTest {
     }
 
     @Test
-    void testToString() {
-        assertEquals(testTitle, testBlock.toString());
+    void testToStringForBrainDump() {
+        assertEquals(testTitle + " of length " + df.format(testLength), testBlock.toString());
+    }
+
+    @Test
+    void testToStringForSchedule() {
+        testBlock.setStartTime(testStartTime);
+        float to = testStartTime + testLength;
+        assertEquals(testTitle + " from " + df.format(testStartTime) + " to " + df.format(to), testBlock.toString());
     }
 }

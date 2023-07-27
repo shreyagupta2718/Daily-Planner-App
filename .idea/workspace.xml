@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="corrected silly error: wrong key">
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project_w0k4c.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project_w0k4c.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/model/BlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/model/BlockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,49 +22,29 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2SoGBSf2q3X5NbV44fnuyH3jpta" />
+  <component name="ProjectId" id="2T9BE64NJHCO5Z3kRBAtjNSiQ4q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/TellerApp",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/labs",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ui" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Denali\Documents\CPSC 210\project_w0k4c\lib\spec" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="persistence" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.JsonWriterTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ui.Main" />
       <module name="project_w0k4c" />
@@ -73,184 +58,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrainDumpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JsonWriterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_w0k4c" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BrainDumpTest" />
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.JsonWriterTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScheduleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="persistence in project_w0k4c" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project_w0k4c" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.ScheduleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScheduleTest.testToString1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project_w0k4c" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.ScheduleTest" />
-      <option name="METHOD_NAME" value="testToString1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScheduleTest.testToString2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project_w0k4c" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.ScheduleTest" />
-      <option name="METHOD_NAME" value="testToString2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JsonWriterTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ScheduleTest" />
-        <item itemvalue="JUnit.BrainDumpTest" />
-        <item itemvalue="JUnit.ScheduleTest.testToString2" />
-        <item itemvalue="JUnit.ScheduleTest.testToString1" />
+        <item itemvalue="JUnit.persistence in project_w0k4c" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="" />
-      <created>1689805385534</created>
+      <changelist id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="" />
+      <created>1690445306830</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1689805385534</updated>
+      <updated>1690445306830</updated>
     </task>
-    <task id="LOCAL-00001" summary="Completed phase 1 deliverables">
-      <option name="closed" value="true" />
-      <created>1689819114218</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819114218</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fixed checkstyle issues in phase 1 deliverables">
-      <option name="closed" value="true" />
-      <created>1689820202976</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1689820202976</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Fixed another checkstyle issue in phase 1 deliverables">
-      <option name="closed" value="true" />
-      <created>1689820361015</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1689820361015</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added features to display times along with block titles">
-      <option name="closed" value="true" />
-      <created>1689853174147</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1689853174147</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added 2 new user stories for phase 2">
-      <option name="closed" value="true" />
-      <created>1690318413191</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1690318413191</updated>
-    </task>
-    <task id="LOCAL-00006" summary="STuff thru JsonReader till realization: can be shorter using parameter">
-      <option name="closed" value="true" />
-      <created>1690413548210</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1690413548210</updated>
-    </task>
-    <task id="LOCAL-00007" summary="saving works but with key twice">
-      <option name="closed" value="true" />
-      <created>1690422023130</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1690422023130</updated>
-    </task>
-    <task id="LOCAL-00008" summary="saving works but with key twice">
-      <option name="closed" value="true" />
-      <created>1690422036291</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1690422036291</updated>
-    </task>
-    <task id="LOCAL-00009" summary="It worked! Saving I mean">
-      <option name="closed" value="true" />
-      <created>1690423042334</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1690423042334</updated>
-    </task>
-    <task id="LOCAL-00010" summary="work in progress reader">
-      <option name="closed" value="true" />
-      <created>1690424802132</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1690424802132</updated>
-    </task>
-    <task id="LOCAL-00011" summary="completed reader">
-      <option name="closed" value="true" />
-      <created>1690439032883</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1690439032883</updated>
-    </task>
-    <task id="LOCAL-00012" summary="corrected silly error: wrong key">
-      <option name="closed" value="true" />
-      <created>1690439290676</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1690439290676</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,56 +116,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Completed phase 1 deliverables" />
-    <MESSAGE value="Fixed checkstyle issues in phase 1 deliverables" />
-    <MESSAGE value="Fixed another checkstyle issue in phase 1 deliverables" />
-    <MESSAGE value="Added features to display times along with block titles" />
-    <MESSAGE value="Added 2 new user stories for phase 2" />
-    <MESSAGE value="STuff thru JsonReader till realization: can be shorter using parameter" />
-    <MESSAGE value="saving works but with key twice" />
-    <MESSAGE value="It worked! Saving I mean" />
-    <MESSAGE value="work in progress reader" />
-    <MESSAGE value="completed reader" />
-    <MESSAGE value="corrected silly error: wrong key" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected silly error: wrong key" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/model/BrainDumpTest.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/model/ScheduleTest.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/model/ScheduleTest.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/ui/PlannerApp.java</url>
-          <line>186</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project_w0k4c$TestBlock.ic" NAME="TestBlock Coverage Results" MODIFIED="1689816925901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>model.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/project_w0k4c$TestBrainDump.ic" NAME="TestBrainDump Coverage Results" MODIFIED="1689816804947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>model.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/project_w0k4c$TestSchedule.ic" NAME="TestSchedule Coverage Results" MODIFIED="1689816820798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>model.*</FILTER>
-    </SUITE>
   </component>
 </project>
