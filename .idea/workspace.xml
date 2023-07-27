@@ -44,7 +44,7 @@
     "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JsonWriterTest">
+  <component name="RunManager" selected="JUnit.All in project_w0k4c">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ui.Main" />
       <module name="project_w0k4c" />
@@ -54,6 +54,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in project_w0k4c" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_w0k4c" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,9 +97,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in project_w0k4c" />
+        <item itemvalue="JUnit.persistence in project_w0k4c" />
         <item itemvalue="JUnit.JsonWriterTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.persistence in project_w0k4c" />
       </list>
     </recent_temporary>
   </component>
