@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="work in progress reader">
+    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="completed reader">
       <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690424802132</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="completed reader">
+      <option name="closed" value="true" />
+      <created>1690439032883</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690439032883</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +264,8 @@
     <MESSAGE value="saving works but with key twice" />
     <MESSAGE value="It worked! Saving I mean" />
     <MESSAGE value="work in progress reader" />
-    <option name="LAST_COMMIT_MESSAGE" value="work in progress reader" />
+    <MESSAGE value="completed reader" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed reader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -275,6 +284,11 @@
           <url>file://$PROJECT_DIR$/src/test/model/ScheduleTest.java</url>
           <line>85</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/ui/PlannerApp.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

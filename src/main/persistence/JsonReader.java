@@ -72,7 +72,7 @@ Schedule schedule=new Schedule();
     // MODIFIES: wr
     // EFFECTS: parses (scheduled) blocks from JSON object and adds them to brain dump
     private void addBlocks(Schedule schedule, JSONObject jsonObject) {
-        JSONArray jsonArray = jsonObject.getJSONArray("Brain Dump");
+        JSONArray jsonArray = jsonObject.getJSONArray("Schedule");
         for (Object json : jsonArray) {
             JSONObject nextBlock = (JSONObject) json;
             addBlock(schedule, nextBlock);
