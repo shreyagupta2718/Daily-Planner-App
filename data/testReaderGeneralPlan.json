@@ -1,0 +1,12 @@
+{
+    "Schedule": [{
+        "length": 8,
+        "start time": 0.5,
+        "title": "Sleeping"
+    }],
+    "Brain Dump": [{
+        "length": 0.75,
+        "start time": 24,
+        "title": "Jogging"
+    }]
+}

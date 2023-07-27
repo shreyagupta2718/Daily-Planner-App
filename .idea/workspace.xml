@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up">
+      <change afterPath="$PROJECT_DIR$/data/testReaderEmptyPlan.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/testReaderGeneralPlan.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_w0k4c.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project_w0k4c.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/model/BlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/model/BlockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,17 +24,21 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2T9BE64NJHCO5Z3kRBAtjNSiQ4q" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/labs",
+    "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/project_w0k4c/data",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
@@ -62,6 +61,22 @@
       <module name="project_w0k4c" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonReaderTest.testReaderEmptyPlan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_w0k4c" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.JsonReaderTest" />
+      <option name="METHOD_NAME" value="testReaderEmptyPlan" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,6 +114,7 @@
       <list>
         <item itemvalue="JUnit.All in project_w0k4c" />
         <item itemvalue="JUnit.persistence in project_w0k4c" />
+        <item itemvalue="JUnit.JsonReaderTest.testReaderEmptyPlan" />
         <item itemvalue="JUnit.JsonWriterTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -113,6 +129,31 @@
       <option name="presentableId" value="Default" />
       <updated>1690445306830</updated>
     </task>
+    <task id="LOCAL-00001" summary="the implementation was working and just the tests were left, but now the build fails :(">
+      <option name="closed" value="true" />
+      <created>1690445815945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690445815945</updated>
+    </task>
+    <task id="LOCAL-00002" summary="the implementation was working and just the tests were left, but now the build fails :(">
+      <option name="closed" value="true" />
+      <created>1690445840046</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690445840046</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up">
+      <option name="closed" value="true" />
+      <created>1690445934058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690445934058</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,5 +166,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="the implementation was working and just the tests were left, but now the build fails :(" />
+    <MESSAGE value="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/persistence/JsonReaderTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
