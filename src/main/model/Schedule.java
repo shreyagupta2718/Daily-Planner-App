@@ -1,9 +1,9 @@
 package model;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import persistence.Writable;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 // Represents a list of scheduled Blocks
@@ -37,21 +37,27 @@ public class Schedule implements Writable {
     // start and end time of the block
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat();
-        df.setMinimumFractionDigits(2);
         String s = "";
         for (Block scheduledBlock : schedule) {
-            float from = scheduledBlock.getStartTime();
-            float to = scheduledBlock.getStartTime() + scheduledBlock.getLength();
-            s += scheduledBlock.toString() + " from " + df.format(from) + " to " + df.format(to) + "\n";
+            s += scheduledBlock.toString() + "\n";
         }
         return s;
     }
 
     @Override
     public JSONObject toJson() {
-        JSONObject json= new JSONObject();
-        json.put("schedule", schedule);
+        JSONObject json = new JSONObject();
+        json.put("schedule", scheduleToJson());
         return json;
+    }
+
+    private JSONArray scheduleToJson() {
+        JSONArray jsonArray = new JSONArray();
+
+        for (Block b : schedule) {
+            jsonArray.put(b.toJson());
+        }
+
+        return jsonArray;
     }
 }

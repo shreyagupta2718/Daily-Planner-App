@@ -1,7 +1,12 @@
 package model;
 
+import org.json.JSONObject;
+import persistence.Writable;
+
+import java.text.DecimalFormat;
+
 // A Block represents an activity with a title, length in time, and start time (if decided)
-public class Block {
+public class Block implements Writable {
     private String title;      // name of block or activity
     private float length;      // length of block i.e. duration of activity in decimal hours
     private float startTime;   // start time represented in 24-hour format in decimal hours
@@ -39,9 +44,27 @@ public class Block {
         return startTime;
     }
 
-    // EFFECTS: Overrides toString in class Object, returns the title of the object
+    // EFFECTS: Overrides toString in class Object, returns the string representation of block
     @Override
     public String toString() {
-        return title;
+        String blockAsString;
+        DecimalFormat df = new DecimalFormat();
+        df.setMinimumFractionDigits(2);
+        float endTime = startTime + length;
+        if (isScheduled()) {
+            blockAsString = title + " from " + df.format(startTime) + " to " + df.format(endTime);
+        } else {
+            blockAsString = title + " of length " + df.format(length);
+        }
+        return blockAsString;
+    }
+
+    @Override
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        json.put("title", title);
+        json.put("length", length);
+        json.put("start time", startTime);
+        return json;
     }
 }

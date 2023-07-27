@@ -1,11 +1,5 @@
 package persistence;
 
-import model.BrainDump;
-import model.Category;
-import model.Schedule;
-import model.Thingy;
-import model.WorkRoom;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -23,47 +17,13 @@ public class JsonReader {
         this.source = source;
     }
 
-    // EFFECTS: reads brain dump from file and returns it;
+    // EFFECTS: reads either schedule or brain dump from file and returns it;
     // throws IOException if an error occurs reading data from file
-    public BrainDump readBrainDump() {
+    public Object read(String key) throws IOException {
         String jsonData = readFile(source);
         JSONObject jsonObject = new JSONObject(jsonData);
-        JSONObject jsonObjectSchedule = jsonObject.getJSONObject("Schedule");
-        return parseBrainDump(jsonObject);
-    }
-
-    // EFFECTS: parses brain dump from JSON object and returns it
-    private BrainDump parseBrainDump(JSONObject jsonObject) {
-        BrainDump brainDump = new BrainDump();
-        addUnscheduledBlock(brainDump, jsonObject);
-        return brainDump;
-    }
-
-    // MODIFIES: brainDump
-    // EFFECTS: parses braindump from JSON object and adds them to brain dump
-    private void addUnscheduledBlock(BrainDump brainDump, JSONObject jsonObject) {
-        JSONArray jsonArray = jsonObject.getJSONArray("Schedule");
-        for (Object json : jsonArray) {
-            JSONObject nextThingy = (JSONObject) json;
-            addThingy(wr, nextThingy);
-        }
-    }
-
-
-    private void addThingies(WorkRoom wr, JSONObject jsonObject) {
-
-    }
-
-
-    // EFFECTS: reads schedule from file and returns it;
-    // throws IOException if an error occurs reading data from file
-    public Schedule readSchedule() {
-        String jsonData = readFile(source);
-        JSONObject jsonObject = new JSONObject(jsonData);
-        return parseSchedule(jsonObject);
-    }
-
-    private Schedule parseSchedule(JSONObject jsonObject) {
+        JSONObject jsonObjectWanted = jsonObject.getJSONObject(key);
+        return parseJsonObject(jsonObjectWanted);
     }
 
     // EFFECTS: reads source file as string and returns it
@@ -77,15 +37,8 @@ public class JsonReader {
         return contentBuilder.toString();
     }
 
-
-
-
-    // MODIFIES: wr
-    // EFFECTS: parses thingy from JSON object and adds it to workroom
-    private void addThingy(WorkRoom wr, JSONObject jsonObject) {
-        String name = jsonObject.getString("name");
-        Category category = Category.valueOf(jsonObject.getString("category"));
-        Thingy thingy = new Thingy(name, category);
-        wr.addThingy(thingy);
+    // EFFECTS: parses either schedule or brain dump from JSON object and returns it
+    private Object parseJsonObject(JSONObject jsonObject) {
+        return null;
     }
 }

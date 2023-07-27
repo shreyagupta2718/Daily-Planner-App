@@ -1,9 +1,9 @@
 package model;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import persistence.Writable;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 // Represents a list of unscheduled Blocks
@@ -66,11 +66,9 @@ public class BrainDump implements Writable {
     // their length
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat();
-        df.setMinimumFractionDigits(2);
         String s = "";
         for (Block b : brainDump) {
-            s += b.toString() + " of length " + df.format(b.getLength()) + "\n";
+            s += b.toString() + "\n";
         }
         return s;
     }
@@ -78,7 +76,17 @@ public class BrainDump implements Writable {
     @Override
     public JSONObject toJson() {
         JSONObject json = new JSONObject();
-        json.put("Brain Dump", brainDump);
+        json.put("Brain Dump", brainDumpToJson());
         return json;
+    }
+
+    private JSONArray brainDumpToJson() {
+        JSONArray jsonArray = new JSONArray();
+
+        for (Block b : brainDump) {
+            jsonArray.put(b.toJson());
+        }
+
+        return jsonArray;
     }
 }

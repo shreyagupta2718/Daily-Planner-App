@@ -10,7 +10,6 @@ import persistence.JsonReader;
 import persistence.JsonWriter;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Scanner;
 
 // Daily Time-Blocking Planner Application
@@ -24,7 +23,7 @@ public class PlannerApp {
     private static final String JSON_STORE = "./data/Plan.json";
 
     // EFFECTS: constructs brain dump and schedule, and runs the planner application
-    public PlannerApp() {
+    public PlannerApp() throws FileNotFoundException {
         brainDump = new BrainDump();
         schedule = new Schedule();
         jsonWriter = new JsonWriter(JSON_STORE);
@@ -74,8 +73,9 @@ public class PlannerApp {
                 break;
             case 6:
                 savePlan();
-            case 7:
-                loadPlan();
+                break;
+            /*case 7:
+                loadPlan();*/
             default:
                 System.out.println("Selection not valid...");
         }
@@ -180,7 +180,7 @@ public class PlannerApp {
 
     // MODIFIES: this
     // EFFECTS: loads workroom from file
-    private void loadWorkRoom() {
+    /*private void loadWorkRoom() {
         try {
             brainDump = jsonReader.read("BrainDump");
             schedule = jsonReader.read("Schedule");
@@ -188,5 +188,5 @@ public class PlannerApp {
         } catch (IOException e) {
             System.out.println("Unable to read from file: " + JSON_STORE);
         }
-    }
+    }*/
 }
