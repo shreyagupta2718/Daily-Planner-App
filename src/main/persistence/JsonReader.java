@@ -1,5 +1,8 @@
 package persistence;
 
+// REFERENCE: JsonSerializationDemo for saving/reading data
+// link: https://github.students.cs.ubc.ca/CPSC210/JsonSerializationDemo.git
+
 import model.Block;
 import model.BrainDump;
 import model.Schedule;
@@ -11,8 +14,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
-
-// REFERENCES: JsonSerializationDemo for saving/reading data
 
 // Represents a reader that reads a plan from JSON data stored in file
 public class JsonReader {

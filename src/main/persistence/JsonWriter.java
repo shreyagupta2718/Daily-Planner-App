@@ -1,5 +1,8 @@
 package persistence;
 
+// REFERENCE: JsonSerializationDemo for saving/reading data
+// link: https://github.students.cs.ubc.ca/CPSC210/JsonSerializationDemo.git
+
 import model.BrainDump;
 import model.Schedule;
 import org.json.JSONArray;
@@ -8,8 +11,6 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-
-// REFERENCES: JsonSerializationDemo for saving/reading data
 
 // Represents a writer that writes JSON representation of plan to file
 public class JsonWriter {
