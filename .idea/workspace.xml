@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up">
-      <change afterPath="$PROJECT_DIR$/data/testReaderEmptyPlan.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/testReaderGeneralPlan.json" afterDir="false" />
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="Phase 2 done (I think), added test reader files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,12 @@
     "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.All in project_w0k4c">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Denali\Documents\CPSC 210\project_w0k4c\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ui.Main" />
       <module name="project_w0k4c" />
@@ -112,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in project_w0k4c" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.persistence in project_w0k4c" />
         <item itemvalue="JUnit.JsonReaderTest.testReaderEmptyPlan" />
+        <item itemvalue="JUnit.All in project_w0k4c" />
         <item itemvalue="JUnit.JsonWriterTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690445934058</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Phase 2 done (I think), added test reader files">
+      <option name="closed" value="true" />
+      <created>1690447111093</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690447111093</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,17 +185,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="the implementation was working and just the tests were left, but now the build fails :(" />
     <MESSAGE value="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/persistence/JsonReaderTest.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Phase 2 done (I think), added test reader files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase 2 done (I think), added test reader files" />
   </component>
 </project>

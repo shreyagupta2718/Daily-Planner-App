@@ -34,23 +34,23 @@ public class JsonReader {
     // EFFECTS: parses brain dump from JSON object and returns it
     private BrainDump parseBrainDump(JSONObject jsonObject) {
         BrainDump brainDump = new BrainDump();
-        addBlocks(brainDump, jsonObject);
+        addBrainDumpBlocks(brainDump, jsonObject);
         return brainDump;
     }
 
     // MODIFIES: wr
     // EFFECTS: parses (unscheduled) blocks from JSON object and adds them to brain dump
-    private void addBlocks(BrainDump brainDump, JSONObject jsonObject) {
+    private void addBrainDumpBlocks(BrainDump brainDump, JSONObject jsonObject) {
         JSONArray jsonArray = jsonObject.getJSONArray("Brain Dump");
         for (Object json : jsonArray) {
             JSONObject nextBlock = (JSONObject) json;
-            addBlock(brainDump, nextBlock);
+            addBrainDumpBlock(brainDump, nextBlock);
         }
     }
 
     // MODIFIES: wr
     // EFFECTS: parses (unscheduled) block from JSON object and adds it to brain dump
-    private void addBlock(BrainDump brainDump, JSONObject jsonObject) {
+    private void addBrainDumpBlock(BrainDump brainDump, JSONObject jsonObject) {
         String title = jsonObject.getString("title");
         float length = jsonObject.getFloat("length");
         brainDump.addToBrainDump(title, length);
@@ -67,23 +67,23 @@ public class JsonReader {
     // EFFECTS: parses schedule from JSON object and returns it
     private Schedule parseSchedule(JSONObject jsonObject) {
         Schedule schedule = new Schedule();
-        addBlocks(schedule, jsonObject);
+        addScheduleBlocks(schedule, jsonObject);
         return schedule;
     }
 
     // MODIFIES: wr
     // EFFECTS: parses (scheduled) blocks from JSON object and adds them to brain dump
-    private void addBlocks(Schedule schedule, JSONObject jsonObject) {
+    private void addScheduleBlocks(Schedule schedule, JSONObject jsonObject) {
         JSONArray jsonArray = jsonObject.getJSONArray("Schedule");
         for (Object json : jsonArray) {
             JSONObject nextBlock = (JSONObject) json;
-            addBlock(schedule, nextBlock);
+            addScheduleBlock(schedule, nextBlock);
         }
     }
 
     // MODIFIES: wr
     // EFFECTS: parses (scheduled) block from JSON object and adds it to brain dump
-    private void addBlock(Schedule schedule, JSONObject jsonObject) {
+    private void addScheduleBlock(Schedule schedule, JSONObject jsonObject) {
         String title = jsonObject.getString("title");
         float length = jsonObject.getFloat("length");
         float startTime = jsonObject.getFloat("start time");

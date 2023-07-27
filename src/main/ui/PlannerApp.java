@@ -56,30 +56,22 @@ public class PlannerApp {
     // MODIFIES: this
     // EFFECTS: processes user command
     private void processCommand(int command) {
-        switch (command) {
-            case 1:
-                add();
-                break;
-            case 2:
-                view();
-                break;
-            case 3:
-                move1();
-                break;
-            case 4:
-                move2();
-                break;
-            case 5:
-                delete();
-                break;
-            case 6:
-                savePlan();
-                break;
-            case 7:
-                loadPlan();
-                break;
-            default:
-                System.out.println("Selection not valid...");
+        if (command == 1) {
+            add();
+        } else if (command == 2) {
+            view();
+        } else if (command == 3) {
+            move1();
+        } else if (command == 4) {
+            move2();
+        } else if (command == 5) {
+            delete();
+        } else if (command == 6) {
+            savePlan();
+        } else if (command == 7) {
+            loadPlan();
+        } else {
+            System.out.println("Selection not valid...");
         }
     }
 
