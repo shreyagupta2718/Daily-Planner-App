@@ -1,12 +1,12 @@
 {
     "Schedule": [{
-        "length": 2.1,
-        "start time": 2.3,
-        "title": "ferf"
+        "length": 7,
+        "start time": 1.2,
+        "title": "sleep"
     }],
     "Brain Dump": [{
-        "length": 2,
+        "length": 0.2,
         "start time": 24,
-        "title": "efe"
+        "title": "die"
     }]
 }

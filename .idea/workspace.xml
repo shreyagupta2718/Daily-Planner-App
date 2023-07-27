@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="completed reader">
-      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" afterDir="false" />
+    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="corrected silly error: wrong key">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_w0k4c.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project_w0k4c.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/TellerApp",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -240,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690439032883</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="corrected silly error: wrong key">
+      <option name="closed" value="true" />
+      <created>1690439290676</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690439290676</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +275,8 @@
     <MESSAGE value="It worked! Saving I mean" />
     <MESSAGE value="work in progress reader" />
     <MESSAGE value="completed reader" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed reader" />
+    <MESSAGE value="corrected silly error: wrong key" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected silly error: wrong key" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -50,7 +50,7 @@ public class JsonReader {
     // EFFECTS: parses (unscheduled) block from JSON object and adds it to brain dump
     private void addBlock(BrainDump brainDump, JSONObject jsonObject) {
         String title = jsonObject.getString("title");
-        Float length = jsonObject.getFloat("length");
+        float length = jsonObject.getFloat("length");
         brainDump.addToBrainDump(title, length);
     }
 
@@ -64,8 +64,8 @@ public class JsonReader {
 
     // EFFECTS: parses schedule from JSON object and returns it
     private Schedule parseSchedule(JSONObject jsonObject) {
-Schedule schedule=new Schedule();
-    addBlocks(schedule, jsonObject);
+        Schedule schedule = new Schedule();
+        addBlocks(schedule, jsonObject);
         return schedule;
     }
 
@@ -83,9 +83,9 @@ Schedule schedule=new Schedule();
     // EFFECTS: parses (scheduled) block from JSON object and adds it to brain dump
     private void addBlock(Schedule schedule, JSONObject jsonObject) {
         String title = jsonObject.getString("title");
-        Float length = jsonObject.getFloat("length");
-        Float startTime = jsonObject.getFloat("start time");
-        Block b=new Block(title, length);
+        float length = jsonObject.getFloat("length");
+        float startTime = jsonObject.getFloat("start time");
+        Block b = new Block(title, length);
         b.setStartTime(startTime);
         schedule.addToSchedule(b);
     }
