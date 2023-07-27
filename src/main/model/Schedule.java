@@ -1,13 +1,11 @@
 package model;
 
 import org.json.JSONArray;
-import org.json.JSONObject;
-import persistence.Writable;
 
 import java.util.ArrayList;
 
 // Represents a list of scheduled Blocks
-public class Schedule implements Writable {
+public class Schedule {
     private ArrayList<Block> schedule; // Daily schedule, a list of scheduled blocks
 
     // Constructs a new empty list of Blocks
@@ -44,14 +42,7 @@ public class Schedule implements Writable {
         return s;
     }
 
-    @Override
-    public JSONObject toJson() {
-        JSONObject json = new JSONObject();
-        json.put("schedule", scheduleToJson());
-        return json;
-    }
-
-    private JSONArray scheduleToJson() {
+    public JSONArray toJson() {
         JSONArray jsonArray = new JSONArray();
 
         for (Block b : schedule) {

@@ -1,13 +1,11 @@
 package model;
 
 import org.json.JSONArray;
-import org.json.JSONObject;
-import persistence.Writable;
 
 import java.util.ArrayList;
 
 // Represents a list of unscheduled Blocks
-public class BrainDump implements Writable {
+public class BrainDump {
     private ArrayList<Block> brainDump; // Brain dump of activities for the day, a list of unscheduled blocks
 
     // Constructs a new empty list of Blocks
@@ -73,14 +71,7 @@ public class BrainDump implements Writable {
         return s;
     }
 
-    @Override
-    public JSONObject toJson() {
-        JSONObject json = new JSONObject();
-        json.put("Brain Dump", brainDumpToJson());
-        return json;
-    }
-
-    private JSONArray brainDumpToJson() {
+    public JSONArray toJson() {
         JSONArray jsonArray = new JSONArray();
 
         for (Block b : brainDump) {

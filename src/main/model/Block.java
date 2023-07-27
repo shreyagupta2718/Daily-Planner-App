@@ -1,12 +1,11 @@
 package model;
 
 import org.json.JSONObject;
-import persistence.Writable;
 
 import java.text.DecimalFormat;
 
 // A Block represents an activity with a title, length in time, and start time (if decided)
-public class Block implements Writable {
+public class Block {
     private String title;      // name of block or activity
     private float length;      // length of block i.e. duration of activity in decimal hours
     private float startTime;   // start time represented in 24-hour format in decimal hours
@@ -59,7 +58,6 @@ public class Block implements Writable {
         return blockAsString;
     }
 
-    @Override
     public JSONObject toJson() {
         JSONObject json = new JSONObject();
         json.put("title", title);

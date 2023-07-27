@@ -2,6 +2,7 @@ package persistence;
 
 import model.BrainDump;
 import model.Schedule;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -29,8 +30,8 @@ public class JsonWriter {
     // MODIFIES: this
     // EFFECTS: writes JSON representation of plan to file
     public void write(BrainDump b, Schedule s) {
-        JSONObject jsonBrainDump = b.toJson();
-        JSONObject jsonSchedule = s.toJson();
+        JSONArray jsonBrainDump = b.toJson();
+        JSONArray jsonSchedule = s.toJson();
         JSONObject storePlan = new JSONObject();
         storePlan.put("Brain Dump", jsonBrainDump);
         storePlan.put("Schedule", jsonSchedule);

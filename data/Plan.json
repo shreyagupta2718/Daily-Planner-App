@@ -1,19 +1,12 @@
 {
-    "Schedule": {"schedule": [{
-        "length": 2.3,
-        "start time": 17.5,
-        "title": "doo"
-    }]},
-    "Brain Dump": {"Brain Dump": [
-        {
-            "length": 3.4,
-            "start time": 24,
-            "title": "boo"
-        },
-        {
-            "length": 1.2,
-            "start time": 24,
-            "title": "foo"
-        }
-    ]}
+    "Schedule": [{
+        "length": 2.1,
+        "start time": 2.3,
+        "title": "ferf"
+    }],
+    "Brain Dump": [{
+        "length": 2,
+        "start time": 24,
+        "title": "efe"
+    }]
 }
