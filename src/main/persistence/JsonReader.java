@@ -1,5 +1,6 @@
 package persistence;
 
+import model.BrainDump;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -19,7 +20,7 @@ public class JsonReader {
 
     // EFFECTS: reads either schedule or brain dump from file and returns it;
     // throws IOException if an error occurs reading data from file
-    public Object read(String key) throws IOException {
+    public BrainDump readBrainDump() throws IOException {
         String jsonData = readFile(source);
         JSONObject jsonObject = new JSONObject(jsonData);
         JSONObject jsonObjectWanted = jsonObject.getJSONObject(key);

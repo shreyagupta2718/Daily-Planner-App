@@ -10,6 +10,7 @@ import persistence.JsonReader;
 import persistence.JsonWriter;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 // Daily Time-Blocking Planner Application
@@ -74,8 +75,9 @@ public class PlannerApp {
             case 6:
                 savePlan();
                 break;
-            /*case 7:
-                loadPlan();*/
+            case 7:
+                loadPlan();
+                break;
             default:
                 System.out.println("Selection not valid...");
         }
@@ -180,13 +182,13 @@ public class PlannerApp {
 
     // MODIFIES: this
     // EFFECTS: loads workroom from file
-    /*private void loadWorkRoom() {
+    private void loadPlan() {
         try {
-            brainDump = jsonReader.read("BrainDump");
-            schedule = jsonReader.read("Schedule");
+            brainDump = jsonReader.readBrainDump();
+            schedule = jsonReader.readSchedule();
             System.out.println("Loaded plan from " + JSON_STORE);
         } catch (IOException e) {
             System.out.println("Unable to read from file: " + JSON_STORE);
         }
-    }*/
+    }
 }

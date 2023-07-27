@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="saving works but with key twice">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/BrainDump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/BrainDump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/persistence/Writable.java" beforeDir="false" />
+    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="It worked! Saving I mean">
+      <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690422036291</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="It worked! Saving I mean">
+      <option name="closed" value="true" />
+      <created>1690423042334</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690423042334</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +247,8 @@
     <MESSAGE value="Added 2 new user stories for phase 2" />
     <MESSAGE value="STuff thru JsonReader till realization: can be shorter using parameter" />
     <MESSAGE value="saving works but with key twice" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving works but with key twice" />
+    <MESSAGE value="It worked! Saving I mean" />
+    <option name="LAST_COMMIT_MESSAGE" value="It worked! Saving I mean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
