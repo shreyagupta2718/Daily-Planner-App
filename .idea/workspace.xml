@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="It worked! Saving I mean">
+    <list default="true" id="e73c2351-5ab4-456b-9f93-03581138dbeb" name="Changes" comment="work in progress reader">
       <change beforePath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/persistence/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690423042334</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="work in progress reader">
+      <option name="closed" value="true" />
+      <created>1690424802132</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690424802132</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +255,8 @@
     <MESSAGE value="STuff thru JsonReader till realization: can be shorter using parameter" />
     <MESSAGE value="saving works but with key twice" />
     <MESSAGE value="It worked! Saving I mean" />
-    <option name="LAST_COMMIT_MESSAGE" value="It worked! Saving I mean" />
+    <MESSAGE value="work in progress reader" />
+    <option name="LAST_COMMIT_MESSAGE" value="work in progress reader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
