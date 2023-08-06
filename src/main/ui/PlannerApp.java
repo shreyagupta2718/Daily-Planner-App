@@ -1,3 +1,4 @@
+/**
 package ui;
 
 // The following code is based on and taken from the TellerApp class in the TellerApp project:
@@ -183,4 +184,15 @@ public class PlannerApp {
             System.out.println("Unable to read from file: " + JSON_STORE);
         }
     }
+
+    public static class Main {
+        public static void main(String[] args) {
+            try {
+                new PlannerApp();
+            } catch (FileNotFoundException e) {
+                System.out.println("Unable to run application: file not found");
+            }
+        }
+    }
 }
+*/
