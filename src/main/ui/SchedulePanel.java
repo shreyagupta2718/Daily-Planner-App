@@ -45,8 +45,8 @@ public class SchedulePanel extends JPanel {
         scheduleEndingPixel = getHeight() - 10;
         int totalPixels = scheduleEndingPixel - scheduleStartingPixel;
         for (int y = scheduleStartingPixel; y <= scheduleEndingPixel; y += totalPixels/24) {
-            g.drawString(Integer.toString(hour), 0, y);
-            g.drawLine(0, y, getWidth(), y);
+            g.drawString(Integer.toString(hour), 0, y+5);
+            g.drawLine(15, y, getWidth(), y);
             hour++;
         }
         g.setColor(save);
