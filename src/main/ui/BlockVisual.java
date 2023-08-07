@@ -24,7 +24,6 @@ public abstract class BlockVisual extends JButton {
         constraints.fill = GridBagConstraints.NONE;
         System.out.println(height);
         this.height = (int) (block.getLength() * oneHourInPixels);
-        System.out.println(this.height);
         setPreferredSize(new Dimension(100, this.height));
     }
 }

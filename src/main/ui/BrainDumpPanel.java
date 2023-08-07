@@ -14,7 +14,7 @@ public class BrainDumpPanel extends JPanel {
     // EFFECTS: Constructs a GUI for the brain dump
     public BrainDumpPanel(BrainDump brainDump) {
         this.brainDump = brainDump;
-        this.setSize(new Dimension(10, 706));
+        this.setSize(new Dimension(20, 706));
     }
 
     public void drawBlocks() {

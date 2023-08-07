@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="blocks dont display when scale is sent because scale is wrong">
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="changed layout frm gridbag to null; start time not accurate, blocks fixed as window size changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691393012966</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="scale works after set size, but start time doesnt because of grid bag layout">
+      <option name="closed" value="true" />
+      <created>1691407812441</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691407812441</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,17 +289,14 @@
     <MESSAGE value="idr but about to change layout" />
     <MESSAGE value="schedule bg lines made, gotta change scaleLength" />
     <MESSAGE value="blocks dont display when scale is sent because scale is wrong" />
-    <option name="LAST_COMMIT_MESSAGE" value="blocks dont display when scale is sent because scale is wrong" />
+    <MESSAGE value="scale works after set size, but start time doesnt because of grid bag layout" />
+    <MESSAGE value="changed layout frm gridbag to null; start time not accurate, blocks fixed as window size changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed layout frm gridbag to null; start time not accurate, blocks fixed as window size changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/ui/SchedulePanel.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java</url>
           <line>39</line>
           <option name="timeStamp" value="8" />
