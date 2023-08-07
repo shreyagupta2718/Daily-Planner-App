@@ -15,7 +15,6 @@ public abstract class BlockVisual extends JButton {
     // Construct a visual representation of a block
     public BlockVisual(Block block, GridBagConstraints constraints) {
         this.block = block;
-        setBackground(Color.pink);
         setForeground(Color.black);
         setText(block.getTitle());
         setOpaque(true);
