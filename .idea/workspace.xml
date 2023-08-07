@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="removed unnecessary constraint">
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="idr but about to change layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691368775963</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="idr but about to change layout">
+      <option name="closed" value="true" />
+      <created>1691372828814</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691372828814</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +259,8 @@
     <MESSAGE value="turned blocks into buttons, but now they dont visualize time" />
     <MESSAGE value="blocks of right height but not arranged acc to start time" />
     <MESSAGE value="removed unnecessary constraint" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary constraint" />
+    <MESSAGE value="idr but about to change layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="idr but about to change layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
