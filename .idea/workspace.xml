@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="turned blocks into buttons, but now they dont visualize time">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
-    </list>
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="blocks of right height but not arranged acc to start time" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691367746086</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="blocks of right height but not arranged acc to start time">
+      <option name="closed" value="true" />
+      <created>1691368383148</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691368383148</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +238,8 @@
     <MESSAGE value="included link in reference" />
     <MESSAGE value="UI that displays plan - grid layout because border is cutting stuff off" />
     <MESSAGE value="turned blocks into buttons, but now they dont visualize time" />
-    <option name="LAST_COMMIT_MESSAGE" value="turned blocks into buttons, but now they dont visualize time" />
+    <MESSAGE value="blocks of right height but not arranged acc to start time" />
+    <option name="LAST_COMMIT_MESSAGE" value="blocks of right height but not arranged acc to start time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

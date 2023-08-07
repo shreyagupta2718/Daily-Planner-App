@@ -22,7 +22,6 @@ public abstract class BlockVisual extends JButton {
         setContentAreaFilled(true);
         setBorderPainted(true);
         constraints.gridx = 0;
-        constraints.weightx = 1.0;
         constraints.fill = GridBagConstraints.NONE;
         height = (int) (block.getLength() * scaleLength);
         setPreferredSize(new Dimension(100, height));
