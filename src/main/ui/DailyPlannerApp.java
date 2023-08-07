@@ -36,8 +36,8 @@ public class DailyPlannerApp extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 800);
         // Create and add the BrainDumpPanel and SchedulePanel
-        BrainDumpUI brainDumpPanel = new BrainDumpUI(brainDump);
-        ScheduleUI schedulePanel = new ScheduleUI(schedule);
+        BrainDumpPanel brainDumpPanel = new BrainDumpPanel(brainDump);
+        SchedulePanel schedulePanel = new SchedulePanel(schedule);
 
         setLayout(new GridLayout());
         add(brainDumpPanel, new GridLayout(1,1));

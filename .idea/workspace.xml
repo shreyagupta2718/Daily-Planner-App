@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="included link in reference">
-      <change afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/BrainDumpUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/ScheduleUI.java" afterDir="false" />
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="UI that displays plan - grid layout because border is cutting stuff off">
+      <change afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/PlannerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/BrainDumpUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690448682800</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UI that displays plan - grid layout because border is cutting stuff off">
+      <option name="closed" value="true" />
+      <created>1691317619848</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691317619848</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +227,18 @@
     <MESSAGE value="Phase 2 done (I think), added test reader files" />
     <MESSAGE value="corrected checkstyle" />
     <MESSAGE value="included link in reference" />
-    <option name="LAST_COMMIT_MESSAGE" value="included link in reference" />
+    <MESSAGE value="UI that displays plan - grid layout because border is cutting stuff off" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI that displays plan - grid layout because border is cutting stuff off" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
