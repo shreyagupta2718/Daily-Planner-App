@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="UI that displays plan - grid layout because border is cutting stuff off">
-      <change afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" afterDir="false" />
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="turned blocks into buttons, but now they dont visualize time">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/BrainDumpUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Denali/Documents/CPSC 210/project_w0k4c/data&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Users/Denali/Documents/CPSC 210/project_w0k4c/data",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Denali\Documents\CPSC 210\project_w0k4c\data" />
@@ -206,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691317619848</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="turned blocks into buttons, but now they dont visualize time">
+      <option name="closed" value="true" />
+      <created>1691367746086</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691367746086</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,7 +233,8 @@
     <MESSAGE value="corrected checkstyle" />
     <MESSAGE value="included link in reference" />
     <MESSAGE value="UI that displays plan - grid layout because border is cutting stuff off" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI that displays plan - grid layout because border is cutting stuff off" />
+    <MESSAGE value="turned blocks into buttons, but now they dont visualize time" />
+    <option name="LAST_COMMIT_MESSAGE" value="turned blocks into buttons, but now they dont visualize time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
