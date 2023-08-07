@@ -14,16 +14,15 @@ public class BrainDumpPanel extends JPanel {
     // EFFECTS: Constructs a GUI for the brain dump
     public BrainDumpPanel(BrainDump brainDump) {
         this.brainDump = brainDump;
-        initializeUI();
+        this.setSize(new Dimension(10, 706));
     }
 
-    private void initializeUI() {
+    public void drawBlocks() {
         setLayout(new GridBagLayout());
         constraints = new GridBagConstraints();
-        int totalPixels = getHeight() - 10;
-
+        float oneHourInPixels = ((getHeight() - 10)/24.0F);
         for (Block block : brainDump.getBrainDump()) {
-            UnscheduledBlockVisual unscheduledBlockVisual = new UnscheduledBlockVisual(block, constraints, totalPixels);
+            UnscheduledBlockVisual unscheduledBlockVisual = new UnscheduledBlockVisual(block, constraints, oneHourInPixels);
             add(unscheduledBlockVisual, constraints);
         }
     }

@@ -5,10 +5,10 @@ import model.Block;
 import java.awt.*;
 
 public class ScheduledBlockVisual extends BlockVisual {
-    public ScheduledBlockVisual(Block block, GridBagConstraints constraints, int height) {
-        super(block, constraints, height);
+    public ScheduledBlockVisual(Block block, GridBagConstraints constraints, float oneHourInPixels) {
+        super(block, constraints, oneHourInPixels);
         setBackground(new Color(255, 209, 229));
-        constraints.gridy = (int) (block.getStartTime()*10); //todo
+        constraints.gridy = (int) (block.getStartTime()*oneHourInPixels);
         addActionListener(e -> handleClick());
     }
 

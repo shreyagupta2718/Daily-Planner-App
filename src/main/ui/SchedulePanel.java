@@ -12,11 +12,12 @@ public class SchedulePanel extends JPanel {
     protected GridBagConstraints constraints;
     private final int scheduleStartingPixel = 10;
     private int scheduleEndingPixel;
+    private int oneHourInPixels;
 
     // EFFECTS: Constructs a GUI for the schedule
     public SchedulePanel(Schedule schedule) {
         this.schedule = schedule;
-        drawBlocks();
+        this.setSize(new Dimension(10, 706));
     }
 
     @Override
@@ -25,17 +26,12 @@ public class SchedulePanel extends JPanel {
     drawHourLines(g);
     }
 
-
-    private void drawBlocks() {
+    public void drawBlocks() {
         setLayout(new GridBagLayout());
         constraints = new GridBagConstraints();
-        scheduleEndingPixel = this.getHeight() - 10;
-        int totalPixels = scheduleEndingPixel - scheduleStartingPixel;
-        System.out.println("draw "+totalPixels);
-
-
+        float oneHourInPixels = ((getHeight() - 10)/24.0F);
         for (Block block : schedule.getSchedule()) {
-            ScheduledBlockVisual scheduledBlockVisual = new ScheduledBlockVisual(block, constraints, totalPixels);
+            ScheduledBlockVisual scheduledBlockVisual = new ScheduledBlockVisual(block, constraints, oneHourInPixels);
             add(scheduledBlockVisual, constraints);
         }
     }
@@ -47,9 +43,10 @@ public class SchedulePanel extends JPanel {
         int hour = 0;
         scheduleEndingPixel = getHeight() - 10;
         int totalPixels = scheduleEndingPixel - scheduleStartingPixel;
-        System.out.println("draw3"+totalPixels);
+        oneHourInPixels = totalPixels / 24;
+        System.out.println("draw3"+totalPixels);//todo
 
-        for (int y = scheduleStartingPixel; y <= scheduleEndingPixel; y += totalPixels/24) {
+        for (int y = scheduleStartingPixel; y <= scheduleEndingPixel; y += oneHourInPixels) {
             g.drawString(Integer.toString(hour), 0, y+5);
             g.drawLine(15, y, getWidth(), y);
             hour++;

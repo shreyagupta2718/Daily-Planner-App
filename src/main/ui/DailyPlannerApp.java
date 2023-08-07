@@ -37,7 +37,9 @@ public class DailyPlannerApp extends JFrame {
         setMinimumSize(new Dimension(800, 800));
         // Create and add the BrainDumpPanel and SchedulePanel
         BrainDumpPanel brainDumpPanel = new BrainDumpPanel(brainDump);
+        brainDumpPanel.drawBlocks();
         SchedulePanel schedulePanel = new SchedulePanel(schedule);
+        schedulePanel.drawBlocks();
 
         setLayout(new GridLayout());
         add(brainDumpPanel, new GridLayout(1,1));
