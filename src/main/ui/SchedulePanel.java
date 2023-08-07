@@ -23,16 +23,19 @@ public class SchedulePanel extends JPanel {
     public void paintComponent(Graphics g) {
     super.paintComponent(g);
     drawHourLines(g);
-    //drawBlocks();
     }
 
 
     private void drawBlocks() {
         setLayout(new GridBagLayout());
         constraints = new GridBagConstraints();
+        scheduleEndingPixel = this.getHeight() - 10;
+        int totalPixels = scheduleEndingPixel - scheduleStartingPixel;
+        System.out.println("draw "+totalPixels);
+
 
         for (Block block : schedule.getSchedule()) {
-            ScheduledBlockVisual scheduledBlockVisual = new ScheduledBlockVisual(block, constraints);
+            ScheduledBlockVisual scheduledBlockVisual = new ScheduledBlockVisual(block, constraints, totalPixels);
             add(scheduledBlockVisual, constraints);
         }
     }
@@ -44,6 +47,8 @@ public class SchedulePanel extends JPanel {
         int hour = 0;
         scheduleEndingPixel = getHeight() - 10;
         int totalPixels = scheduleEndingPixel - scheduleStartingPixel;
+        System.out.println("draw3"+totalPixels);
+
         for (int y = scheduleStartingPixel; y <= scheduleEndingPixel; y += totalPixels/24) {
             g.drawString(Integer.toString(hour), 0, y+5);
             g.drawLine(15, y, getWidth(), y);

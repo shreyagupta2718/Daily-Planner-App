@@ -20,9 +20,10 @@ public class BrainDumpPanel extends JPanel {
     private void initializeUI() {
         setLayout(new GridBagLayout());
         constraints = new GridBagConstraints();
+        int totalPixels = getHeight() - 10;
 
         for (Block block : brainDump.getBrainDump()) {
-            UnscheduledBlockVisual unscheduledBlockVisual = new UnscheduledBlockVisual(block, constraints);
+            UnscheduledBlockVisual unscheduledBlockVisual = new UnscheduledBlockVisual(block, constraints, totalPixels);
             add(unscheduledBlockVisual, constraints);
         }
     }
