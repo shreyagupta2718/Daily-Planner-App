@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="minor code design">
+      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/AddTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/LoadTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/SaveTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/ScheduleTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/Tool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/UnscheduledBlockVisual.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ui.Tools" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Denali\Documents\CPSC 210\project_w0k4c\data" />
     </key>
@@ -278,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691455728020</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="minor code design">
+      <option name="closed" value="true" />
+      <created>1691456831811</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691456831811</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +323,7 @@
     <MESSAGE value="scale works after set size, but start time doesnt because of grid bag layout" />
     <MESSAGE value="changed layout frm gridbag to null; start time not accurate, blocks fixed as window size changes" />
     <MESSAGE value="solved schedule problems by fixing the size of the panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved schedule problems by fixing the size of the panel" />
+    <MESSAGE value="minor code design" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor code design" />
   </component>
 </project>

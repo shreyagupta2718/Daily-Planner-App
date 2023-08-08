@@ -19,6 +19,6 @@ public abstract class BlockVisual extends JButton {
         setContentAreaFilled(true);
         setBorderPainted(true);
         this.height = (int) (block.getLength() * oneHourInPixels);
-        setPreferredSize(new Dimension(100, this.height));
+        setPreferredSize(new Dimension(180, this.height));
     }
 }
