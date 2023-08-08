@@ -22,3 +22,17 @@ schedule
 - As a user, I want to be able to save my brain-dump and schedule to file (if I so choose)
 - As a user, I want to be able to be able to load my brain-dump and schedule from file (if I so choose)
 
+## Instructions for Grader
+- You can generate the first required action related to adding blocks to a brain dump/schedule by
+using the "Add a block" section on the left. Fill in the field for the title and length (duration in 
+number of hours) of the block, and then click "Add Block"
+- You can generate the second required action related to adding blocks to a brain dump/schedule by 
+using the "Schedule a block" section on the left. Enter the block number of the block you want to schedule,
+as it appears on the brain dump inside square brackets. Also enter the start time for the block. Finally, 
+press "Schedule a block"
+- You can locate my visual component by simply adding blocks to the brain dump or schedule according
+to the first two instructions. Alternatively, you can load a saved plan. Every block will have a height that corresponds to its duration in hours
+and the scheduled blocks (i.e. blocks on the schedule) will be placed on a background grid that looks similar to 
+the 'daily' view on google calender, positioned according to their start time.
+- You can save the state of my application by pressing the 'Save' button on the left
+- You can reload the state of my application by pressing the 'Load' button on the left

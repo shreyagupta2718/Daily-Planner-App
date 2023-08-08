@@ -7,16 +7,14 @@ import javax.swing.*;
 import java.awt.*;
 
 // A JPanel class to display the schedule as rectangles representing the blocks
-public class SchedulePanel extends JPanel {
+public class SchedulePanel extends ListOfBlocksPanel {
     private Schedule schedule;
-    private final int emptySpace = 10;
-    private final int oneHourInPixels = 29;
 
     // EFFECTS: Constructs a GUI for the schedule
     public SchedulePanel(Schedule schedule) {
         this.schedule = schedule;
-        this.setSize(new Dimension(20, 24 * oneHourInPixels + 2*emptySpace));
-        this.setBorder(BorderFactory.createEmptyBorder(emptySpace, 5, emptySpace, 1));
+        this.setSize(dimension);
+        this.setBorder(BorderFactory.createTitledBorder(border, "Schedule", titleX, titleY));
     }
 
     // EFFECTS: Draws the background for the schedule panel

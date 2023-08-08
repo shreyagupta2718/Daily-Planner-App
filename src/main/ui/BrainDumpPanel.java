@@ -7,14 +7,15 @@ import javax.swing.*;
 import java.awt.*;
 
 // A JPanel class to display the brain dump as rectangles representing the blocks
-public class BrainDumpPanel extends JPanel {
+public class BrainDumpPanel extends ListOfBlocksPanel {
     private BrainDump brainDump;
     protected GridBagConstraints constraints;
 
     // EFFECTS: Constructs a GUI for the brain dump
     public BrainDumpPanel(BrainDump brainDump) {
         this.brainDump = brainDump;
-        this.setSize(new Dimension(20, 706));
+        this.setSize(dimension);
+        this.setBorder(BorderFactory.createTitledBorder(border, "Brain Dump", titleX, titleY));
     }
 
     // EFFECTS: Draws each block in the brain dump with the right length
