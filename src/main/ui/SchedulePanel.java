@@ -10,7 +10,7 @@ import java.awt.*;
 public class SchedulePanel extends JPanel {
     private Schedule schedule;
     private final int emptySpace = 10;
-    private int oneHourInPixels = 29;
+    private final int oneHourInPixels = 29;
 
     // EFFECTS: Constructs a GUI for the schedule
     public SchedulePanel(Schedule schedule) {
@@ -19,17 +19,19 @@ public class SchedulePanel extends JPanel {
         this.setBorder(BorderFactory.createEmptyBorder(emptySpace, 5, emptySpace, 1));
     }
 
+    // EFFECTS: Draws the background for the schedule panel
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         drawHourLines(g);
     }
 
+    // EFFECTS: Draws each block in the schedule with the right length and start time
     public void drawBlocks() {
         setLayout(null);
         for (Block block : schedule.getSchedule()) {
             float time = block.getStartTime();
-            int pixel = emptySpace + (int) Math.round(oneHourInPixels * time);
+            int pixel = emptySpace + Math.round(oneHourInPixels * time);
             ScheduledBlockVisual scheduledBlockVisual = new ScheduledBlockVisual(block, oneHourInPixels, pixel);
             add(scheduledBlockVisual);
         }

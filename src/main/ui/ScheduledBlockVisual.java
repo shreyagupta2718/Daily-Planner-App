@@ -5,6 +5,8 @@ import model.Block;
 import java.awt.*;
 
 public class ScheduledBlockVisual extends BlockVisual {
+
+   // EFFECTS: Constructs a scheduled block i.e. with a start time
     public ScheduledBlockVisual(Block block, float oneHourInPixels, int pixel) {
         super(block, oneHourInPixels);
         setBackground(new Color(255, 209, 229));

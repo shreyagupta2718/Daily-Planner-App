@@ -21,7 +21,7 @@ public class DailyPlannerApp extends JFrame {
     private static final String JSON_STORE = "./data/Plan.json";
 
     // EFFECTS: constructs daily planner GUI with a brain dump and schedule
-    public DailyPlannerApp()  throws FileNotFoundException {
+    public DailyPlannerApp() throws FileNotFoundException {
         brainDump = new BrainDump();
         schedule = new Schedule();
         jsonWriter = new JsonWriter(JSON_STORE);
@@ -29,21 +29,21 @@ public class DailyPlannerApp extends JFrame {
         initializeUI();
     }
 
-    //EFFECTS: initializes the UI by setting the layout and adding components
+    // MODIFIES: thia
+    // EFFECTS: initializes the UI by setting the layout and adding components
     private void initializeUI() {
         loadPlan();
         setTitle("Daily Time-Blocking Planner");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setMinimumSize(new Dimension(800, 800));
-        // Create and add the BrainDumpPanel and SchedulePanel
         BrainDumpPanel brainDumpPanel = new BrainDumpPanel(brainDump);
         brainDumpPanel.drawBlocks();
         SchedulePanel schedulePanel = new SchedulePanel(schedule);
         schedulePanel.drawBlocks();
 
         setLayout(new GridLayout());
-        add(brainDumpPanel, new GridLayout(1,1));
-        add(schedulePanel, new GridLayout(1,2));
+        add(brainDumpPanel, new GridLayout(1, 1));
+        add(schedulePanel, new GridLayout(1, 2));
         pack();
 
         // TODO: Add other components and functionality
@@ -52,7 +52,7 @@ public class DailyPlannerApp extends JFrame {
 
     // TODO: Add more methods for adding, moving, and deleting blocks
 
-    private void loadPlan() {
+    private void loadPlan() { //todo
         try {
             brainDump = jsonReader.readBrainDump();
             schedule = jsonReader.readSchedule();

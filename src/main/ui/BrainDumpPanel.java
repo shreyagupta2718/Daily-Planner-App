@@ -17,10 +17,11 @@ public class BrainDumpPanel extends JPanel {
         this.setSize(new Dimension(20, 706));
     }
 
+    // EFFECTS: Draws each block in the brain dump with the right length
     public void drawBlocks() {
         setLayout(new GridBagLayout());
         constraints = new GridBagConstraints();
-        float oneHourInPixels = ((getHeight() - 10)/24.0F);
+        float oneHourInPixels = ((getHeight() - 10) / 24.0F);
         for (Block block : brainDump.getBrainDump()) {
             UnscheduledBlockVisual unscheduledBlockVisual = new UnscheduledBlockVisual(block, constraints, oneHourInPixels);
             add(unscheduledBlockVisual, constraints);
