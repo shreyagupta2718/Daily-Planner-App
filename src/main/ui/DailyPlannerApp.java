@@ -5,9 +5,9 @@ import model.BrainDump;
 import model.Schedule;
 import persistence.JsonReader;
 import persistence.JsonWriter;
-import ui.Tools.LoadTool;
-import ui.Tools.SaveTool;
-import ui.Tools.Tool;
+import ui.tools.LoadTool;
+import ui.tools.SaveTool;
+import ui.tools.Tool;
 
 import javax.swing.*;
 import java.awt.*;
@@ -80,11 +80,10 @@ public class DailyPlannerApp extends JFrame {
 
     // MODIFIES: this
     // EFFECTS: Sets a common layout for the panels to add a block to brain dump and to schedule a block
-    private void createPanelLayout(JPanel jPanel) {
-        jPanel.setMaximumSize(new Dimension(400, 180));
-        jPanel.setPreferredSize(new Dimension(180, 180));
-        jPanel.setLayout(new BoxLayout(jPanel, BoxLayout.Y_AXIS));
-
+    private void createPanelLayout(JPanel panel) {
+        panel.setMaximumSize(new Dimension(400, 180));
+        panel.setPreferredSize(new Dimension(180, 180));
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
     }
 
     // MODIFIES: this
@@ -99,7 +98,13 @@ public class DailyPlannerApp extends JFrame {
         schedulePanel.add(new JLabel("Start at:"));
         JTextField timeField = new JTextField(2);
         schedulePanel.add(timeField);
+        schedulePanel.add(createScheduleButton(blockNumField, timeField));
+        toolPanel.add(Box.createVerticalGlue());
+        toolPanel.add(schedulePanel);
+    }
 
+    // EFFECTS: Makes a button to schedule a block and returns it
+    private JButton createScheduleButton(JTextField blockNumField, JTextField timeField) {
         JButton scheduleButton = new JButton("Schedule Block");
         scheduleButton.addActionListener(e -> {
             int blockIndex = Integer.parseInt(blockNumField.getText()) - 1;
@@ -116,10 +121,7 @@ public class DailyPlannerApp extends JFrame {
                 JOptionPane.showMessageDialog(DailyPlannerApp.this, "Invalid block index!");
             }
         });
-        schedulePanel.add(scheduleButton);
-
-        toolPanel.add(Box.createVerticalGlue());
-        toolPanel.add(schedulePanel);
+        return scheduleButton;
     }
 
     // MODIFIES: this
@@ -134,7 +136,12 @@ public class DailyPlannerApp extends JFrame {
         addPanel.add(new JLabel("Length:"));
         JTextField lengthField = new JTextField(2);
         addPanel.add(lengthField);
+        addPanel.add(createAddButton(titleField, lengthField));
+        toolPanel.add(Box.createVerticalGlue());
+        toolPanel.add(addPanel);
+    }
 
+    private JButton createAddButton(JTextField titleField, JTextField lengthField) {
         JButton addButton = new JButton("Add Block");
         addButton.addActionListener(e -> {
             String title = titleField.getText();
@@ -145,10 +152,8 @@ public class DailyPlannerApp extends JFrame {
             lengthField.setText("");
             updateUI();
         });
-        addPanel.add(addButton);
 
-        toolPanel.add(Box.createVerticalGlue());
-        toolPanel.add(addPanel);
+        return addButton;
     }
 
     // MODIFIES: this
