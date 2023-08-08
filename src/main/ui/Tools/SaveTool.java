@@ -26,6 +26,7 @@ public class SaveTool extends Tool {
     // Represents the ActionListener for the SaveTool
     private class SaveToolClickHandler implements ActionListener {
         @Override
+        // EFFECTS: Saves the current plan
         public void actionPerformed(ActionEvent e) {
             planner.savePlan();
         }

@@ -17,6 +17,5 @@ public class UnscheduledBlockVisual extends BlockVisual {
     }
 
     private void handleClick() {
-        // todo
     }
 }

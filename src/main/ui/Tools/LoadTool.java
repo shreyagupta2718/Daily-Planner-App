@@ -25,6 +25,7 @@ public class LoadTool extends Tool {
     // Represents the ActionListener for the LoadTool
     private class LoadToolClickHandler implements ActionListener {
         @Override
+        // EFFECTS: Loads the saved plan
         public void actionPerformed(ActionEvent e) {
             planner.loadPlan();
         }

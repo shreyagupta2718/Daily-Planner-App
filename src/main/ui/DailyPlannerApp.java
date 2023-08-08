@@ -58,7 +58,7 @@ public class DailyPlannerApp extends JFrame {
     }
 
     // MODIFIES: this
-    // EFFECTS: creates and adds all the tools in the tools panel, and displays them
+    // EFFECTS: creates tools panel, adds tools in it, and adds it to the UI
     private void createTools() {
         toolPanel = new JPanel();
         BoxLayout toolPanelLayout = new BoxLayout(toolPanel, BoxLayout.Y_AXIS);
@@ -79,21 +79,25 @@ public class DailyPlannerApp extends JFrame {
     }
 
     // MODIFIES: this
+    // EFFECTS: Sets a common layout for the panels to add a block to brain dump and to schedule a block
+    private void createPanelLayout(JPanel jPanel) {
+        jPanel.setMaximumSize(new Dimension(400, 180));
+        jPanel.setPreferredSize(new Dimension(180, 180));
+        jPanel.setLayout(new BoxLayout(jPanel, BoxLayout.Y_AXIS));
+
+    }
+
+    // MODIFIES: this
     // EFFECTS: Creates the area that lets user schedule a block by taking block no. and start time as input
     private void createSchedulePanel() {
         JPanel schedulePanel = new JPanel();
-        schedulePanel.setMaximumSize(new Dimension(400, 180));
-        schedulePanel.setPreferredSize(new Dimension(180, 180));
-        schedulePanel.setLayout(new BoxLayout(schedulePanel, BoxLayout.Y_AXIS));
+        createPanelLayout(schedulePanel);
         schedulePanel.setBorder(BorderFactory.createTitledBorder("Schedule a block"));
-        JLabel blockNumLabel = new JLabel("Block no.:");
+        schedulePanel.add(new JLabel("Block no.:"));
         JTextField blockNumField = new JTextField(2);
-        JLabel timeLabel = new JLabel("Start at:");
-        JTextField timeField = new JTextField(2);
-
-        schedulePanel.add(blockNumLabel);
         schedulePanel.add(blockNumField);
-        schedulePanel.add(timeLabel);
+        schedulePanel.add(new JLabel("Start at:"));
+        JTextField timeField = new JTextField(2);
         schedulePanel.add(timeField);
 
         JButton scheduleButton = new JButton("Schedule Block");
@@ -115,24 +119,20 @@ public class DailyPlannerApp extends JFrame {
         schedulePanel.add(scheduleButton);
 
         toolPanel.add(Box.createVerticalGlue());
-        toolPanel.add(schedulePanel, new GridLayout(0, 1));
+        toolPanel.add(schedulePanel);
     }
 
+    // MODIFIES: this
     // EFFECTS: Creates the area that lets user add a block taking title and length of block as input
     private void createAddPanel() {
         JPanel addPanel = new JPanel();
-        addPanel.setMaximumSize(new Dimension(400, 180));
-        addPanel.setPreferredSize(new Dimension(180, 180));
-        addPanel.setLayout(new BoxLayout(addPanel, BoxLayout.Y_AXIS));
+        createPanelLayout(addPanel);
         addPanel.setBorder(BorderFactory.createTitledBorder("Add a block"));
-        JLabel titleLabel = new JLabel("Title:", SwingConstants.LEFT);
+        addPanel.add(new JLabel("Title:"));
         JTextField titleField = new JTextField(30);
-        JLabel lengthLabel = new JLabel("Length:", SwingConstants.LEFT);
-        JTextField lengthField = new JTextField(2);
-
-        addPanel.add(titleLabel);
         addPanel.add(titleField);
-        addPanel.add(lengthLabel);
+        addPanel.add(new JLabel("Length:"));
+        JTextField lengthField = new JTextField(2);
         addPanel.add(lengthField);
 
         JButton addButton = new JButton("Add Block");
@@ -151,6 +151,7 @@ public class DailyPlannerApp extends JFrame {
         toolPanel.add(addPanel);
     }
 
+    // MODIFIES: this
     // EFFECTS: saves the brain dump and schedule to file
     public void savePlan() {
         try {
@@ -176,6 +177,7 @@ public class DailyPlannerApp extends JFrame {
         }
     }
 
+    // MODIFIES: this
     // EFFECTS: updates the GUI components with the updated brain dump and schedule
     private void updateUI() {
         getContentPane().removeAll();
