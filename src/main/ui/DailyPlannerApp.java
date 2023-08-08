@@ -5,7 +5,9 @@ import model.BrainDump;
 import model.Schedule;
 import persistence.JsonReader;
 import persistence.JsonWriter;
-import ui.Tools.*;
+import ui.Tools.LoadTool;
+import ui.Tools.SaveTool;
+import ui.Tools.Tool;
 
 import javax.swing.*;
 import java.awt.*;
@@ -96,8 +98,7 @@ public class DailyPlannerApp extends JFrame {
         schedulePanel.add(timeLabel);
         schedulePanel.add(timeField);
 
-        ScheduleTool scheduleTool = new ScheduleTool(this, toolPanel);
-        scheduleTool.addToParent(schedulePanel);
+
 
         toolPanel.add(Box.createVerticalGlue());
         toolPanel.add(schedulePanel, new GridLayout(0, 1));
@@ -120,8 +121,17 @@ public class DailyPlannerApp extends JFrame {
         addPanel.add(lengthLabel);
         addPanel.add(lengthField);
 
-        AddTool addTool = new AddTool(this, toolPanel);
-        addTool.addToParent(addPanel);
+        JButton addButton = new JButton("Add Block");
+        addButton.addActionListener(e -> {
+            String title = titleField.getText();
+            float length = Float.parseFloat(lengthField.getText());
+            Block block = new Block(title, length);
+            brainDump.addToBrainDump(block);
+            titleField.setText("");
+            lengthField.setText("");
+            updateUI();
+        });
+        addPanel.add(addButton);
 
         toolPanel.add(Box.createVerticalGlue());
         toolPanel.add(addPanel);
