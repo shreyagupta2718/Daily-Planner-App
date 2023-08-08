@@ -47,7 +47,7 @@ public class SchedulePanel extends ListOfBlocksPanel {
             if (hour == 24) {
                 break;
             }
-                hour++;
+            hour++;
         }
         g.setColor(save);
     }
