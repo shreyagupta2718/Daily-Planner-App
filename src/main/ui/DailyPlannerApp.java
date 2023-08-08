@@ -22,21 +22,19 @@ public class DailyPlannerApp extends JFrame {
     private static final String JSON_STORE = "./data/Plan.json";
     JPanel toolPanel;
 
-    // EFFECTS: constructs daily planner GUI with a brain dump and schedule
+    // EFFECTS: constructs daily planner GUI with a tools panel, a brain dump, and a schedule
     public DailyPlannerApp() throws FileNotFoundException {
-        brainDump = new BrainDump();
-        schedule = new Schedule();
         jsonWriter = new JsonWriter(JSON_STORE);
         jsonReader = new JsonReader(JSON_STORE);
-        toolPanel = new JPanel();
-        try {
-            brainDump = jsonReader.readBrainDump();
-            schedule = jsonReader.readSchedule();
-            System.out.println("Loaded plan from " + JSON_STORE);
-        } catch (IOException e) {
-            System.out.println("Unable to read from file: " + JSON_STORE);
-        }
+        initializeModelElements();
         initializeUI();
+    }
+
+    // MODIFIES: this
+    // EFFECTS: initializes the brain dump and schedule
+    private void initializeModelElements() {
+        brainDump = new BrainDump();
+        schedule = new Schedule();
     }
 
     // MODIFIES: this
@@ -49,7 +47,6 @@ public class DailyPlannerApp extends JFrame {
         brainDumpPanel.drawBlocks();
         SchedulePanel schedulePanel = new SchedulePanel(schedule);
         schedulePanel.drawBlocks();
-
         GridLayout layoutUI = new GridLayout(1, 3);
         this.setLayout(layoutUI);
         createTools();
@@ -64,6 +61,7 @@ public class DailyPlannerApp extends JFrame {
     // MODIFIES: this
     // EFFECTS:  a helper method which declares and instantiates all tools
     private void createTools() {
+        toolPanel = new JPanel();
         BoxLayout toolPanelLayout = new BoxLayout(toolPanel, BoxLayout.Y_AXIS);
         toolPanel.setLayout(toolPanelLayout);
         toolPanel.setMaximumSize(new Dimension(1, 4));
@@ -98,7 +96,6 @@ public class DailyPlannerApp extends JFrame {
         schedulePanel.add(timeLabel);
         schedulePanel.add(timeField);
 
-
         ScheduleTool scheduleTool = new ScheduleTool(this, toolPanel);
         scheduleTool.addToParent(schedulePanel);
 
@@ -128,5 +125,36 @@ public class DailyPlannerApp extends JFrame {
 
         toolPanel.add(Box.createVerticalGlue());
         toolPanel.add(addPanel);
+    }
+
+    // EFFECTS: saves the brain dump and schedule to file
+    public void savePlan() {
+        try {
+            jsonWriter.open();
+            jsonWriter.write(brainDump, schedule);
+            jsonWriter.close();
+            JOptionPane.showMessageDialog(this, "Plan saved successfully to " + JSON_STORE);
+        } catch (FileNotFoundException e) {
+            JOptionPane.showMessageDialog(this, "Unable to write to file: " + JSON_STORE);
+        }
+    }
+
+    // MODIFIES: this
+    // EFFECTS: loads brain dump and schedule from file
+    public void loadPlan() {
+        try {
+            brainDump = jsonReader.readBrainDump();
+            schedule = jsonReader.readSchedule();
+            updateUI();
+            JOptionPane.showMessageDialog(this, "Plan loaded successfully from " + JSON_STORE);
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "Unable to read from file: " + JSON_STORE);
+        }
+    }
+
+    // EFFECTS: updates the GUI components with the updated brain dump and schedule
+    private void updateUI() {
+        getContentPane().removeAll();
+        initializeUI();
     }
 }

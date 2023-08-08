@@ -3,6 +3,8 @@ package ui.Tools;
 import ui.DailyPlannerApp;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LoadTool extends Tool {
     public LoadTool(DailyPlannerApp planner, JPanel toolArea) {
@@ -17,6 +19,14 @@ public class LoadTool extends Tool {
 
     @Override
     protected void addListener() {
+        button.addActionListener(new LoadToolClickHandler());
+    }
 
+    // Represents the ActionListener for the LoadTool
+    private class LoadToolClickHandler implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            planner.loadPlan();
+        }
     }
 }

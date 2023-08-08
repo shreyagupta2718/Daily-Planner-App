@@ -1,14 +1,16 @@
 {
-    "Schedule": [{
-        "length": 8,
-        "start time": 2,
-        "title": "sleep"
-    },
-      {
-        "length": 8,
-        "start time": 12,
-        "title": "sleep"
-      }],
+    "Schedule": [
+        {
+            "length": 8,
+            "start time": 2,
+            "title": "sleep"
+        },
+        {
+            "length": 6,
+            "start time": 12,
+            "title": "sleep"
+        }
+    ],
     "Brain Dump": [
         {
             "length": 2.3,
@@ -25,25 +27,25 @@
             "start time": 24,
             "title": "hello"
         },
-      {
-        "length": 3.2,
-        "start time": 24,
-        "title": "hello"
-      },
-      {
-        "length": 3.2,
-        "start time": 24,
-        "title": "hello"
-      },
-      {
-        "length": 3.2,
-        "start time": 24,
-        "title": "hello"
-      },
-      {
-        "length": 3.2,
-        "start time": 24,
-        "title": "hello"
-      }
+        {
+            "length": 3.2,
+            "start time": 24,
+            "title": "hello"
+        },
+        {
+            "length": 3.2,
+            "start time": 24,
+            "title": "hello"
+        },
+        {
+            "length": 3.2,
+            "start time": 24,
+            "title": "hello"
+        },
+        {
+            "length": 3.2,
+            "start time": 24,
+            "title": "hello"
+        }
     ]
 }

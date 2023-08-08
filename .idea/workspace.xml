@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="minor code design">
-      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/AddTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/LoadTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/SaveTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/ScheduleTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/Tools/Tool.java" afterDir="false" />
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="buttons without action listeners">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BlockVisual.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/Tools/LoadTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/Tools/LoadTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/Tools/SaveTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/Tools/SaveTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -292,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691456831811</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="buttons without action listeners">
+      <option name="closed" value="true" />
+      <created>1691489361439</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1691489361439</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,6 +328,7 @@
     <MESSAGE value="changed layout frm gridbag to null; start time not accurate, blocks fixed as window size changes" />
     <MESSAGE value="solved schedule problems by fixing the size of the panel" />
     <MESSAGE value="minor code design" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor code design" />
+    <MESSAGE value="buttons without action listeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="buttons without action listeners" />
   </component>
 </project>
