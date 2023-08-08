@@ -1,51 +1,30 @@
 {
-    "Schedule": [
-        {
-            "length": 8,
-            "start time": 2,
-            "title": "sleep"
-        },
-        {
-            "length": 6,
-            "start time": 12,
-            "title": "sleep"
-        }
-    ],
+    "Schedule": [],
     "Brain Dump": [
         {
-            "length": 2.3,
+            "length": 3,
             "start time": 24,
-            "title": "jog"
+            "title": "sleep"
         },
         {
-            "length": 1,
+            "length": 3,
             "start time": 24,
-            "title": "dinner"
+            "title": "class"
         },
         {
-            "length": 3.2,
+            "length": 1.5,
             "start time": 24,
-            "title": "hello"
+            "title": "job"
         },
         {
-            "length": 3.2,
+            "length": 3,
             "start time": 24,
-            "title": "hello"
+            "title": "ubcq"
         },
         {
-            "length": 3.2,
+            "length": 3,
             "start time": 24,
-            "title": "hello"
-        },
-        {
-            "length": 3.2,
-            "start time": 24,
-            "title": "hello"
-        },
-        {
-            "length": 3.2,
-            "start time": 24,
-            "title": "hello"
+            "title": "sleep more"
         }
     ]
 }

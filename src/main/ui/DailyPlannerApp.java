@@ -98,7 +98,23 @@ public class DailyPlannerApp extends JFrame {
         schedulePanel.add(timeLabel);
         schedulePanel.add(timeField);
 
-
+        JButton scheduleButton = new JButton("Schedule Block");
+        scheduleButton.addActionListener(e -> {
+            int blockIndex = Integer.parseInt(blockNumField.getText()) - 1;
+            float startTime = Float.parseFloat(timeField.getText());
+            if (blockIndex >= 0 && blockIndex < brainDump.getBrainDump().size()) {
+                Block block = brainDump.getBrainDump().get(blockIndex);
+                block.setStartTime(startTime);
+                schedule.addToSchedule(block);
+                brainDump.deleteFromBrainDump(block);
+                blockNumField.setText("");
+                timeField.setText("");
+                updateUI();
+            } else {
+                JOptionPane.showMessageDialog(DailyPlannerApp.this, "Invalid block index!");
+            }
+        });
+        schedulePanel.add(scheduleButton);
 
         toolPanel.add(Box.createVerticalGlue());
         toolPanel.add(schedulePanel, new GridLayout(0, 1));
