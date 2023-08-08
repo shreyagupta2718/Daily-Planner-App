@@ -13,15 +13,13 @@ public abstract class BlockVisual extends JButton {
     //protected float scaleLength = (getHeight()-20)/24; // Scale to convert 24hr decimal time into pixels todo
 
     // Construct a visual representation of a block
-    public BlockVisual(Block block, GridBagConstraints constraints, float oneHourInPixels) {
+    public BlockVisual(Block block, float oneHourInPixels) {
         this.block = block;
         setForeground(Color.black);
         setText(block.getTitle());
         setOpaque(true);
         setContentAreaFilled(true);
         setBorderPainted(true);
-        constraints.gridx = 0;
-        constraints.fill = GridBagConstraints.NONE;
         System.out.println(height);
         this.height = (int) (block.getLength() * oneHourInPixels);
         setPreferredSize(new Dimension(100, this.height));
