@@ -25,11 +25,11 @@ schedule
 ## Instructions for Grader
 - You can generate the first required action related to adding blocks to a brain dump/schedule by
 using the "Add a block" section on the left. Fill in the field for the title and length (duration in 
-number of hours) of the block, and then click "Add Block"
+number of hours) of the block, and then click "Add Block". This will add a block to the brain dump.
 - You can generate the second required action related to adding blocks to a brain dump/schedule by 
 using the "Schedule a block" section on the left. Enter the block number of the block you want to schedule,
 as it appears on the brain dump inside square brackets. Also enter the start time for the block. Finally, 
-press "Schedule a block"
+press "Schedule a block". This will remove the block from the brain dump and add it to the schedule.
 - You can locate my visual component by simply adding blocks to the brain dump or schedule according
 to the first two instructions. Alternatively, you can load a saved plan. Every block will have a height that corresponds to its duration in hours
 and the scheduled blocks (i.e. blocks on the schedule) will be placed on a background grid that looks similar to 

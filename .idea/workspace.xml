@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="comments and style minor changes">
-      <change afterPath="$PROJECT_DIR$/src/main/ui/ListOfBlocksPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/BrainDumpPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/SchedulePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
