@@ -14,7 +14,6 @@ public abstract class BlockVisual extends JButton {
     public BlockVisual(Block block, float oneHourInPixels) {
         this.block = block;
         setForeground(Color.black);
-        setText(block.getTitle());
         setOpaque(true);
         setContentAreaFilled(true);
         setBorderPainted(true);

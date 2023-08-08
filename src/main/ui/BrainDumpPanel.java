@@ -21,9 +21,12 @@ public class BrainDumpPanel extends JPanel {
     public void drawBlocks() {
         setLayout(new GridBagLayout());
         constraints = new GridBagConstraints();
+        int num = 0;
+        UnscheduledBlockVisual unscheduledBlockVisual;
         float oneHourInPixels = ((getHeight() - 10) / 24.0F);
         for (Block block : brainDump.getBrainDump()) {
-            UnscheduledBlockVisual unscheduledBlockVisual = new UnscheduledBlockVisual(block, constraints, oneHourInPixels);
+            num++;
+            unscheduledBlockVisual = new UnscheduledBlockVisual(block, constraints, oneHourInPixels, num);
             add(unscheduledBlockVisual, constraints);
         }
     }

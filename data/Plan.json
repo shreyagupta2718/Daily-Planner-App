@@ -1,5 +1,16 @@
 {
-    "Schedule": [],
+    "Schedule": [
+        {
+            "length": 3,
+            "start time": 9.5,
+            "title": "class"
+        },
+        {
+            "length": 3,
+            "start time": 21,
+            "title": "ubcq"
+        }
+    ],
     "Brain Dump": [
         {
             "length": 3,
@@ -7,19 +18,9 @@
             "title": "sleep"
         },
         {
-            "length": 3,
-            "start time": 24,
-            "title": "class"
-        },
-        {
             "length": 1.5,
             "start time": 24,
-            "title": "job"
-        },
-        {
-            "length": 3,
-            "start time": 24,
-            "title": "ubcq"
+            "title": "work"
         },
         {
             "length": 3,

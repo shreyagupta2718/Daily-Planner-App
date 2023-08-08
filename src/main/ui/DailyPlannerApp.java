@@ -16,7 +16,6 @@ import java.io.IOException;
 
 // Represents main window frame of the Daily Time-Blocking Planner Application
 public class DailyPlannerApp extends JFrame {
-    private Block block;
     private BrainDump brainDump;
     private Schedule schedule;
     private JsonWriter jsonWriter;
@@ -28,19 +27,19 @@ public class DailyPlannerApp extends JFrame {
     public DailyPlannerApp() throws FileNotFoundException {
         jsonWriter = new JsonWriter(JSON_STORE);
         jsonReader = new JsonReader(JSON_STORE);
-        initializeModelElements();
+        initializeUserData();
         initializeUI();
     }
 
     // MODIFIES: this
     // EFFECTS: initializes the brain dump and schedule
-    private void initializeModelElements() {
+    private void initializeUserData() {
         brainDump = new BrainDump();
         schedule = new Schedule();
     }
 
     // MODIFIES: this
-    // EFFECTS: initializes the UI by setting the layout and adding components
+    // EFFECTS: Sets the layout of the UI and adds components representing a tools panel, a brain dump, and a schedule
     private void initializeUI() {
         setTitle("Daily Time-Blocking Planner");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,13 +54,11 @@ public class DailyPlannerApp extends JFrame {
         add(brainDumpPanel);
         add(schedulePanel);
         pack();
-
-        // TODO: Add other components and functionality
         setVisible(true);
     }
 
     // MODIFIES: this
-    // EFFECTS:  a helper method which declares and instantiates all tools
+    // EFFECTS: creates and adds all the tools in the tools panel, and displays them
     private void createTools() {
         toolPanel = new JPanel();
         BoxLayout toolPanelLayout = new BoxLayout(toolPanel, BoxLayout.Y_AXIS);
@@ -81,6 +78,7 @@ public class DailyPlannerApp extends JFrame {
         add(toolPanel);
     }
 
+    // MODIFIES: this
     // EFFECTS: Creates the area that lets user schedule a block by taking block no. and start time as input
     private void createSchedulePanel() {
         JPanel schedulePanel = new JPanel();
