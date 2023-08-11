@@ -24,6 +24,7 @@ public class Block {
     // EFFECTS: Assigns a time of the day to start the activity
     public void setStartTime(float startTime) {
         this.startTime = startTime;
+        EventLog.getInstance().logEvent(new Event(toString() + " was assigned the start time " + startTime));
     }
 
     // EFFECTS: returns true if a start time has been assigned to the activity, false otherwise

@@ -19,6 +19,7 @@ public class BrainDump {
     public void addToBrainDump(String title, float length) {
         Block block = new Block(title, length);
         brainDump.add(block);
+        EventLog.getInstance().logEvent(new Event(block.toString() + " added to brain dump."));
     }
 
     // REQUIRES: An unscheduled block i.e. start time of block is not set
@@ -26,6 +27,7 @@ public class BrainDump {
     // EFFECTS: The given Block is added to the brain dump
     public void addToBrainDump(Block block) {
         brainDump.add(block);
+        EventLog.getInstance().logEvent(new Event(block.toString() + " added to brain dump."));
     }
 
     // REQUIRES: Block is present in the brain dump
@@ -33,6 +35,7 @@ public class BrainDump {
     // EFFECTS: The given block is deleted from the brain dump
     public void deleteFromBrainDump(Block block) {
         brainDump.remove(block);
+        EventLog.getInstance().logEvent(new Event(block.toString() + " deleted from brain dump."));
     }
 
     // REQUIRES: Block with given title is present in the brain dump
@@ -41,6 +44,7 @@ public class BrainDump {
     public void deleteFromBrainDump(String title) {
         Block block = findBlockFromTitle(title);
         brainDump.remove(block);
+        EventLog.getInstance().logEvent(new Event(block.toString() + " deleted from brain dump."));
     }
 
     // REQUIRES: title has a non-zero length

@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="fixed checkstyle issue">
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="more comments added">
+      <change afterPath="$PROJECT_DIR$/src/main/model/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/model/EventLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/BrainDump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/BrainDump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Schedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/tools/LoadTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/tools/LoadTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/tools/SaveTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/tools/SaveTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/tools/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/tools/Tool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691506967212</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="more comments added">
+      <option name="closed" value="true" />
+      <created>1691749899793</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1691749899793</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,7 +388,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="the implementation was working and just the tests were left, but now the build fails :(" />
     <MESSAGE value="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up" />
     <MESSAGE value="Phase 2 done (I think), added test reader files" />
     <MESSAGE value="corrected checkstyle" />
@@ -404,7 +412,8 @@
     <MESSAGE value="edited README.md" />
     <MESSAGE value="fixed checkstyle issues" />
     <MESSAGE value="fixed checkstyle issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed checkstyle issue" />
+    <MESSAGE value="more comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="more comments added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

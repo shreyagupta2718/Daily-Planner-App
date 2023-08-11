@@ -36,3 +36,30 @@ and the scheduled blocks (i.e. blocks on the schedule) will be placed on a backg
 the 'daily' view on google calender, positioned according to their start time.
 - You can save the state of my application by pressing the 'Save' button on the left
 - You can reload the state of my application by pressing the 'Load' button on the left
+
+## Phase 4: Task 2
+WindowListener method called: windowClosing.
+
+Logged Events:
+
+Fri Aug 11 06:37:39 PDT 2023
+
+jogging of length 0.50 added to brain dump.
+
+Fri Aug 11 06:37:46 PDT 2023
+
+lab of length 2.00 added to brain dump.
+
+Fri Aug 11 06:37:58 PDT 2023
+
+lab from 15.00 to 17.00 was assigned the start time 15.0
+
+Fri Aug 11 06:37:58 PDT 2023
+
+lab from 15.00 to 17.00 added to the schedule.
+
+Fri Aug 11 06:37:58 PDT 2023
+
+lab from 15.00 to 17.00 deleted from brain dump.
+
+Process finished with exit code 0

@@ -15,9 +15,10 @@ public class Schedule {
 
     // REQUIRES: A scheduled block i.e. start time of block is set
     // MODIFIES: this
-    // EFFECTS: The given Block is added to the brain dump
+    // EFFECTS: The given Block is added to the schedule
     public void addToSchedule(Block block) {
         schedule.add(block);
+        EventLog.getInstance().logEvent(new Event(block.toString() + " added to the schedule."));
     }
 
     // REQUIRES: Block is present in the schedule
@@ -25,6 +26,7 @@ public class Schedule {
     // EFFECTS: The given block is deleted from the schedule
     public void deleteFromSchedule(Block block) {
         schedule.remove(block);
+        EventLog.getInstance().logEvent(new Event(block.toString() + " deleted from the schedule."));
     }
 
     public ArrayList<Block> getSchedule() {

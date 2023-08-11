@@ -2,6 +2,8 @@ package ui;
 
 import model.Block;
 import model.BrainDump;
+import model.Event;
+import model.EventLog;
 import model.Schedule;
 import persistence.JsonReader;
 import persistence.JsonWriter;
@@ -11,11 +13,13 @@ import ui.tools.Tool;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // Represents main window frame of the Daily Time-Blocking Planner Application
-public class DailyPlannerApp extends JFrame {
+public class DailyPlannerApp extends JFrame implements WindowListener {
     private BrainDump brainDump;
     private Schedule schedule;
     private JsonWriter jsonWriter;
@@ -27,6 +31,7 @@ public class DailyPlannerApp extends JFrame {
     public DailyPlannerApp() throws FileNotFoundException {
         jsonWriter = new JsonWriter(JSON_STORE);
         jsonReader = new JsonReader(JSON_STORE);
+        addWindowListener(this);
         initializeUserData();
         initializeUI();
     }
@@ -42,7 +47,7 @@ public class DailyPlannerApp extends JFrame {
     // EFFECTS: Sets the layout of the UI and adds components representing a tools panel, a brain dump, and a schedule
     private void initializeUI() {
         setTitle("Daily Time-Blocking Planner");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         setMinimumSize(new Dimension(800, 800));
         BrainDumpPanel brainDumpPanel = new BrainDumpPanel(brainDump);
         brainDumpPanel.drawBlocks();
@@ -188,5 +193,47 @@ public class DailyPlannerApp extends JFrame {
     private void updateUI() {
         getContentPane().removeAll();
         initializeUI();
+    }
+
+    // EFFECTS: none
+    @Override
+    public void windowOpened(WindowEvent e) {
+    }
+
+    // EFFECTS: prints the logged events when user quits the app
+    @Override
+    public void windowClosing(WindowEvent e) {
+        System.out.println("WindowListener method called: windowClosing.");
+        EventLog loggedEvents = EventLog.getInstance();
+        System.out.println("Logged Events:");
+        for (Event event : loggedEvents) {
+            System.out.println(event);
+        }
+        System.exit(0);
+    }
+
+    // EFFECTS: none
+    @Override
+    public void windowClosed(WindowEvent e) {
+    }
+
+    // EFFECTS: none
+    @Override
+    public void windowIconified(WindowEvent e) {
+    }
+
+    // EFFECTS: none
+    @Override
+    public void windowDeiconified(WindowEvent e) {
+    }
+
+    // EFFECTS: none
+    @Override
+    public void windowActivated(WindowEvent e) {
+    }
+
+    // EFFECTS: none
+    @Override
+    public void windowDeactivated(WindowEvent e) {
     }
 }
