@@ -4,6 +4,7 @@ import model.Block;
 
 import java.awt.*;
 
+// Represents the UI for a block in the schedule
 public class ScheduledBlockVisual extends BlockVisual {
 
    // EFFECTS: Constructs a scheduled block i.e. with a start time

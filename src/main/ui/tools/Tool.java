@@ -4,6 +4,7 @@ import ui.DailyPlannerApp;
 
 import javax.swing.*;
 
+// Represents a tool with an activation button
 public abstract class Tool {
 
     protected JButton button;

@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="edited README.md">
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="fixed checkstyle issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Plan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Plan.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/ScheduledBlockVisual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/tools/LoadTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/tools/LoadTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/tools/SaveTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/tools/SaveTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/tools/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/tools/Tool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +347,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691505798034</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fixed checkstyle issues">
+      <option name="closed" value="true" />
+      <created>1691506840718</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1691506840718</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fixed checkstyle issue">
+      <option name="closed" value="true" />
+      <created>1691506967212</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1691506967212</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +402,9 @@
     <MESSAGE value="added block numbers, comments" />
     <MESSAGE value="comments and style minor changes" />
     <MESSAGE value="edited README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited README.md" />
+    <MESSAGE value="fixed checkstyle issues" />
+    <MESSAGE value="fixed checkstyle issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed checkstyle issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

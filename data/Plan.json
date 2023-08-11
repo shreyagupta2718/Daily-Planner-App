@@ -1,31 +1,29 @@
 {
     "Schedule": [
         {
-            "length": 3,
-            "start time": 9.5,
-            "title": "class"
+            "length": 0.5,
+            "start time": 19,
+            "title": "snack"
+        },
+        {
+            "length": 0.5,
+            "start time": 19.5,
+            "title": "dinner"
         },
         {
             "length": 3,
-            "start time": 21,
-            "title": "ubcq"
-        }
-    ],
-    "Brain Dump": [
-        {
-            "length": 3,
-            "start time": 24,
-            "title": "sleep"
+            "start time": 20,
+            "title": "phase 4 "
         },
         {
             "length": 1.5,
-            "start time": 24,
-            "title": "work"
-        },
-        {
-            "length": 3,
-            "start time": 24,
-            "title": "sleep more"
+            "start time": 23,
+            "title": "lab"
         }
-    ]
+    ],
+    "Brain Dump": [{
+        "length": 1,
+        "start time": 24,
+        "title": "lecture ticket"
+    }]
 }

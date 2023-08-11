@@ -141,6 +141,7 @@ public class DailyPlannerApp extends JFrame {
         toolPanel.add(addPanel);
     }
 
+    // EFFECTS: Creates the button for adding to the add panel and returns it
     private JButton createAddButton(JTextField titleField, JTextField lengthField) {
         JButton addButton = new JButton("Add Block");
         addButton.addActionListener(e -> {
