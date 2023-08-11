@@ -53,3 +53,17 @@ lab from 15.00 to 17.00 deleted from brain dump.
 
 Process finished with exit code 0
 
+## Phase 4: Task 3
+If I had more time, I would refactor the code in DailyPlannerApp corresponding to adding and scheduling blocks into 
+separate classes to improve the cohesion of the DailyPlannerApp and adhere to the single responsibility principle. 
+If I were to add more tools in addition to add and schedule, the DailyPlannerApp would become long and would be handling
+more responsibilities than a main frame should. The main frame's responsibility should be to bring all the components 
+of the UI together, it should not be creating any major components but rather delegate the task to another class. Thus 
+refactoring the code for AddPanel and SchedulePanel out of the DailyPlannerApp would improve the design and readability.
+
+There are two ways to do this, I could either make a 
+new abstract class for tools with field (ToolWithFields) and have AddPanel and SchedulePanel extend those fields, or I 
+could use the functionality of the existing the abstract class Tool. The latter is a better option since ToolWithFields
+would have a very wide range of responsibilities so by the single responsibility principle it's preferable to have
+AddPanel and SchedulePanel re-use some of Tool's functionality rather than have an separate abstract class the two extend.
+
