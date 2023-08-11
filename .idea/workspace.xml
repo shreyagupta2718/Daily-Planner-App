@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="more comments added">
-      <change afterPath="$PROJECT_DIR$/src/main/model/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/model/EventLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/BrainDump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/BrainDump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/DailyPlannerApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="3053bef2-b1ce-46c9-9bea-4972837888ae" name="Changes" comment="task 2 complete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -372,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691749899793</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="task 2 complete">
+      <option name="closed" value="true" />
+      <created>1691761665216</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1691761665216</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,7 +387,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed when I made that commit, and said externally added files &quot;always add&quot; in the pop-up" />
     <MESSAGE value="Phase 2 done (I think), added test reader files" />
     <MESSAGE value="corrected checkstyle" />
     <MESSAGE value="included link in reference" />
@@ -413,7 +411,8 @@
     <MESSAGE value="fixed checkstyle issues" />
     <MESSAGE value="fixed checkstyle issue" />
     <MESSAGE value="more comments added" />
-    <option name="LAST_COMMIT_MESSAGE" value="more comments added" />
+    <MESSAGE value="task 2 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 2 complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
