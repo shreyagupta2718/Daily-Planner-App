@@ -1,29 +1,30 @@
 {
     "Schedule": [
         {
-            "length": 0.5,
-            "start time": 19,
-            "title": "snack"
+            "length": 7,
+            "start time": 1,
+            "title": "SLEEP"
         },
         {
             "length": 0.5,
-            "start time": 19.5,
-            "title": "dinner"
+            "start time": 8.5,
+            "title": "appointment"
         },
         {
             "length": 3,
-            "start time": 20,
-            "title": "phase 4 "
+            "start time": 9.5,
+            "title": "co-op"
+        },
+        {
+            "length": 3,
+            "start time": 15,
+            "title": "229"
         },
         {
             "length": 1.5,
-            "start time": 23,
-            "title": "lab"
+            "start time": 20,
+            "title": "fees"
         }
     ],
-    "Brain Dump": [{
-        "length": 1,
-        "start time": 24,
-        "title": "lecture ticket"
-    }]
+    "Brain Dump": []
 }
